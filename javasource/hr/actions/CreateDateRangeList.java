@@ -37,11 +37,24 @@ public class CreateDateRangeList extends CustomJavaAction<java.util.List<IMendix
 	{
 		// BEGIN USER CODE
 		String sql =
-				"with   first_day_of_month as " +
-				    "(SELECT * FROM generate_series(date_trunc('month',?::timestamp),?, '1 months') as firstday " +
-					" where firstday > ?::timestamp ) " +
-				"select fdom.firstday::date + (8 - extract(dow from fdom.firstday))::integer%7 as firstmonday " +
-				"from   first_day_of_month as fdom "
+				"with first_day_of_month as (\n " +
+		        "  SELECT * \n" +
+				"  FROM   generate_series\n" +
+				"         ( date_trunc('month', ?::timestamp)\n" +
+				"         , ?, '1 months'\n" +
+				"         ) as firstday\n" +
+				"),\n" +
+				"firstmonday as (\n" +
+				"  select fdom.firstday::date + \n" +
+				"           ((8 - extract(dow from fdom.firstday))::integer % 7) \n" +
+				"           as first_monday_date\n" +
+				"  from   first_day_of_month as fdom\n" +
+				")\n" +
+				"select fm.first_monday_date\n" +
+				"from   firstmonday  as fm\n" +
+				"where  fm.first_monday_date >= ?::timestamp\n" +
+				"and    fm.first_monday_date <= ?::timestamp\n" +
+				";"
 				;
 		logger.info("executeAction: " + sql);
 		List<IMendixObject> resultList = null;
@@ -53,6 +66,7 @@ public class CreateDateRangeList extends CustomJavaAction<java.util.List<IMendix
 				stmt.setDate(1,new java.sql.Date(this.StartDate.getTime()));
 				stmt.setDate(2, new java.sql.Date(this.EndDate.getTime()));
 				stmt.setDate(3,new java.sql.Date(this.StartDate.getTime()));
+				stmt.setDate(4, new java.sql.Date(this.EndDate.getTime()));
 				ResultSet rset = stmt.executeQuery();
 				ResultSetMetaData rmd = rset.getMetaData();
 				// loop through first monday records
