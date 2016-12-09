@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Listview for phone and tablet
+========================================================================== */
+.profile-phone,
+.profile-tablet {
+	.mx-listview {
+		/* Styles here */
+		.mx-listview-searchbar {
+			/* Styles here */
+			button {
+				/* Reset Search Button - default hidden */
+			}
+			.mx-listview-search-input {
+				/* Search Field */
+				input {
+					/* Styles here */
+				}
+			}
+		}
+		.mx-list {
+			.mx-listview-item {
+				&:first-child {
+
+				}
+				&:last-child {
+
+				}
+			}
+		}
+	}
+	label {
+		/* Styles here */
+	}
+	.mx-listview-loadMore {
+		/* Listview Load More button */
+	}
+}

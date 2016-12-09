@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Inputs
+========================================================================== */
+.form-control {
+	/* Styles here */
+}
+textarea.form-control {
+	
+}
+.form-control:focus {
+	/* Styles here */
+}
+// Not editable textarea, textarea will be rendered as a label
+.mx-textarea label {
+	
+}
+// Input and textarea get properly aligned
+.form-group div[class*='textBox'] > label,
+.form-group div[class*='textArea'] > label {
+	
+}
+.form-group .control-label {
+	/* Styles here */
+}
+// Inputs Readonly
+.readonly-input {
+	label { 
+		
+	}
+}
+.readonly-input-alert label {
+	
+}

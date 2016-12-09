@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Grid
+
+   Default Mendix Grid
+========================================================================== */
+.mx-grid {
+	/* Styles here */
+	.mx-grid-controlbar {
+		/* Styles here */
+		// Paging
+		.mx-grid-pagingbar {
+			/* Styles here */
+			// Buttons
+			.mx-button {
+				/* Styles here */
+			&:hover {
+				/* Styles here */
+			}
+		}
+
+		// Text Paging .. to .. to ..
+		.mx-grid-paging-status {
+			/* Styles here */
+		}
+	}
+
+	.mx-grid-searchbar {
+		/* Styles here */
+		.mx-grid-search-item {
+			/* Styles here */
+			.mx-grid-search-label {
+				/* Styles here */
+				}
+			}
+			.mx-grid-search-input {
+				/* Styles here */
+				.form-control {
+					/* Styles here */
+				}
+				.mx-button {
+					/* Styles here */
+				}
+			}
+		}
+	}
+}

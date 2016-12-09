@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Bar
+========================================================================== */
+.mx-navbar {
+	/* Styles here */
+	ul.nav { 
+		/* Styles here */
+		// Navigation item
+		> li.mx-navbar-item > a {
+			color: #FFF;
+			// Dropdown arrow
+			.caret {
+
+			}
+			&:hover,
+			&:focus,
+			&.active {
+				/* Styles here */
+				.caret {
+
+				}
+			}
+			&.active {
+				/* Styles here */
+            }
+			.mx-navbar-submenu:before {
+				/* Dropdown Menu */
+			}
+			img {
+
+			}
+		}
+
+		> .mx-navbar-item > a:hover, 
+		> .mx-navbar-item > a:focus,
+		> .mx-navbar-item.active a,
+		> .mx-navbar-item.open > a, 
+		> .mx-navbar-item.open > a:hover, 
+		> .mx-navbar-item.open > a:focus {
+			/* When hovering or the dropdown is open */
+			.caret {
+
+			}
+		}
+		> .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a {
+			/* Styles here */
+			.caret {
+
+			}
+        }
+	}
+
+	@media (max-width: $screen-sm) {
+		ul.nav > li.mx-navbar-item > a {
+
+		}
+		.mx-navbar-item.open .dropdown-menu {
+			
+			> li.mx-navbar-subitem > a {
+
+				&:hover,
+				&:focus {
+
+				}
+
+				&.active {
+
+				}
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Tree
+========================================================================== */
+.mx-navigationtree {
+	/* Styles here */
+	// Navigation item
+	.navbar-inner ul {
+		/* Styles here */
+		li {
+			/* Styles here */
+			a {
+				padding: 20px;
+				border: 0;
+				.glyphicon {
+					margin-right: 0.3em;
+				}
+				.caret {
+
+				}
+
+				img {
+
+				}
+			}
+
+			a:hover,
+			a:focus,
+			a.active {
+				/* Styles here */
+				.caret {
+
+				}
+			}
+
+            a.active {
+ 			/* Styles here */
+            }
+		}
+	}
+
+	// Sub navigation item
+	li.mx-navigationtree-has-items {
+		/* Styles here */
+		> ul {
+
+			li {
+
+				a {
+					padding: 15px 40px;
+					&:hover,
+					&:focus,
+					&.active {
+
+					}
+					&.active {
+	
+		            }
+				}
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Simple Menu Bar
+========================================================================== */
+.mx-menubar {
+	/* Styles here */
+	ul.mx-menubar-list {
+		/* Styles here */
+		li.mx-menubar-item {
+			/* Styles here */
+			a {
+				/* Styles here */
+			}
+			&:hover a,
+			&:focus a,
+			&.active a {
+				/* Styles here */
+			}
+			&.active a {
+				/* Styles here */
+            }
+		}
+	}
+
+	// Two menu items
+	&.menubar-col-6 ul.mx-menubar-list li.mx-menubar-item {
+		
+	}
+	// Three menu items
+	&.menubar-col-4 ul.mx-menubar-list li.mx-menubar-item {
+		
+	}
+	// Four menu items
+	&.menubar-col-3 ul.mx-menubar-list li.mx-menubar-item {
+		
+	}
+	// Five menu items
+	&.menubar-col-3 ul.mx-menubar-list li.mx-menubar-item {
+		
+	}
+}
+
+// Vertical variation specifics
+.mx-menubar-vertical {
+	
+	ul.mx-menubar-list {
+		li.mx-menubar-item {
+			a {
+
+			}
+
+			&:hover a,
+			&:focus a,
+			&.active a {
+
+			}
+			&.active a {
+
+            }
+		}
+	}
+}
+

@@ -1,0 +1,23 @@
+// ==========================================================================
+// Master Detail Listview
+// ==========================================================================
+.masterdetail-listview {
+	.mx-listview {
+	
+		.mx-listview-content {
+
+		}
+	
+		.mx-listview-item {
+
+			&.selected {
+				
+				
+				&:hover,
+				&:active {
+					
+				}
+			}
+		}
+	}
+}

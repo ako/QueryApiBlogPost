@@ -1,0 +1,4514 @@
+@media (max-width: 767px) {
+  .mx-grid,
+  .mx-tabcontainer,
+  .mx-listview,
+  .mx-templategrid,
+  .mx-groupbox {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .mx-grid,
+  .mx-tabcontainer,
+  .mx-listview,
+  .mx-templategrid,
+  .mx-groupbox {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .mx-grid,
+  .mx-tabcontainer,
+  .mx-listview,
+  .mx-templategrid,
+  .mx-groupbox {
+    margin-bottom: 35px;
+  }
+}
+
+.mx-layoutcontainer .mx-layoutcontainer-wrapper {
+  padding: 0px;
+}
+
+.profile-tablet .mx-layoutcontainer .mx-layoutcontainer-wrapper {
+  padding: 0px;
+}
+
+.profile-phone .mx-layoutcontainer .mx-layoutcontainer-wrapper {
+  padding: 0px;
+}
+
+.mx-layoutcontainer .mx-placeholder {
+  padding: 0;
+}
+.mx-layoutcontainer .mx-placeholder .mx-layoutgrid {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 767px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid {
+    padding: 10px 15px 10px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid {
+    padding: 20px 30px 20px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid {
+    padding: 35px 40px 35px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:first-child {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:first-child {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:first-child {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:last-child {
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:last-child {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .mx-layoutcontainer .mx-placeholder .mx-layoutgrid:last-child {
+    padding-bottom: 35px;
+  }
+}
+.mx-layoutcontainer .mx-placeholder .mx-layoutgrid.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mx-layoutcontainer .mx-placeholder .mx-layoutgrid .mx-layoutgrid {
+  padding: 0;
+}
+
+.profile-phone .mx-layoutcontainer .mx-placeholder {
+  padding: 0;
+}
+.profile-phone .mx-layoutcontainer .mx-placeholder .mx-layoutgrid .mx-layoutgrid {
+  padding: 0;
+}
+
+.profile-tablet .mx-layoutcontainer .mx-placeholder {
+  padding: 0;
+}
+.profile-tablet .mx-layoutcontainer .mx-placeholder .mx-layoutgrid {
+  padding: 20px 30px 20px 30px;
+}
+.profile-tablet .mx-layoutcontainer .mx-placeholder .mx-layoutgrid.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.profile-tablet .mx-layoutcontainer .mx-placeholder .mx-layoutgrid .mx-layoutgrid {
+  padding: 0;
+}
+
+.mx-layoutcontainer-wrapper.mx-layoutcontainer-nested {
+  padding: 0;
+}
+
+.pageheader .mx-grid,
+.pageheader .mx-tabcontainer,
+.pageheader .mx-listview,
+.pageheader .mx-templategrid,
+.pageheader .mx-groupbox {
+  margin-bottom: 0;
+}
+
+.profile-phone .mx-placeholder > .mx-tabcontainer:only-child,
+.profile-phone .mx-placeholder > .mx-grid:only-child,
+.profile-tablet .mx-placeholder > .mx-tabcontainer:only-child,
+.profile-tablet .mx-placeholder > .mx-grid:only-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Base
+
+   Default settings
+========================================================================== */
+html {
+  height: 100%;
+}
+
+body {
+  font-weight: normal;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-color: #FFF;
+  min-height: 100%;
+}
+
+a {
+  color: #0595db;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #036290;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+input:focus,
+button:focus,
+.mx-link:focus {
+  outline: 0;
+}
+
+div[tabindex] {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Inputs
+========================================================================== */
+.form-control, .form-disabled p {
+  -moz-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  box-shadow: none;
+  display: block;
+  padding: 6px 8px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  background-color: #FFF;
+  background-image: none;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.form-control:focus, .form-disabled p:focus {
+  border-color: #0595db;
+  background-color: #FFF;
+  outline: 0;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-control-static, .form-group div[class*='textBox'] > label,
+.form-group div[class*='textArea'] > label,
+.form-group div[class*='datePicker'] > label {
+  overflow: hidden;
+  min-height: auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+/* Not editable textarea, textarea will be rendered as a label */
+.mx-textarea label {
+  height: auto;
+}
+
+/* ==========================================================================
+   Group with label and input
+========================================================================== */
+/* Input and textarea get properly aligned */
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group [class*='col-'] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-group .control-label {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    line-height: 1.42857;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+/* ==========================================================================
+   Inputs File Upload
+========================================================================== */
+.mx-fileinput {
+  /* File input widget hover fix */
+}
+.mx-fileinput .mx-wrapped-label {
+  display: inline-block;
+  width: 200px;
+}
+.mx-fileinput .mx-wrapped-form .mx-wrapped-input {
+  cursor: pointer;
+}
+.mx-fileinput .mx-wrapped-form .mx-fileinput-upload-button:hover {
+  background-color: #DDDDDD;
+}
+
+/* ==========================================================================
+   Alerts
+
+   Default Bootstrap Alert boxes. Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages
+========================================================================== */
+.alert {
+  border-radius: 4px;
+  margin-top: 0;
+  padding: 15px;
+  border: 0;
+}
+
+.alert-bordered {
+  border: 1px solid;
+}
+
+.alert-success {
+  border-color: #579501;
+  background-color: #e4f4cc;
+  color: #477901;
+}
+
+.alert-info {
+  border-color: #3582b7;
+  background-color: #daeffd;
+  color: #2b6a94;
+}
+
+.alert-warning {
+  border-color: #b87315;
+  background-color: #feebd2;
+  color: #955d11;
+}
+
+.alert-danger {
+  border-color: #af151b;
+  background-color: #fbd2d3;
+  color: #8e1116;
+}
+
+.has-error .alert {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Backgrounds
+
+   Different background components, all managed by variables
+========================================================================== */
+.background-layout {
+  background-color: #FFF !important;
+}
+
+.background-layout-secondary {
+  background-color: #EFF4F7 !important;
+}
+
+.background-default {
+  background-color: #DDDDDD !important;
+}
+
+.background-default-darker {
+  background-color: #858585 !important;
+}
+
+.background-default-dark {
+  background-color: #a4a4a4 !important;
+}
+
+.background-default-light {
+  background-color: #ebebeb !important;
+}
+
+.background-default-lighter {
+  background-color: #f8f8f8 !important;
+}
+
+.background-inverse {
+  background-color: #4D4d4d !important;
+}
+
+.background-inverse-darker {
+  background-color: #2e2e2e !important;
+}
+
+.background-inverse-dark {
+  background-color: #393939 !important;
+}
+
+.background-inverse-light {
+  background-color: #949494 !important;
+}
+
+.background-inverse-lighter {
+  background-color: #dbdbdb !important;
+}
+
+.background-primary {
+  background-color: #0595db !important;
+}
+
+.background-primary-darker {
+  background-color: #035983 !important;
+}
+
+.background-primary-dark {
+  background-color: #046ea2 !important;
+}
+
+.background-primary-light {
+  background-color: #69bfe9 !important;
+}
+
+.background-primary-lighter {
+  background-color: #cdeaf8 !important;
+}
+
+.background-info {
+  background-color: #48B0F7 !important;
+}
+
+.background-info-darker {
+  background-color: #2b6a94 !important;
+}
+
+.background-info-dark {
+  background-color: #3582b7 !important;
+}
+
+.background-info-light {
+  background-color: #91d0fa !important;
+}
+
+.background-info-lighter {
+  background-color: #daeffd !important;
+}
+
+.background-success {
+  background-color: #76ca02 !important;
+}
+
+.background-success-darker {
+  background-color: #477901 !important;
+}
+
+.background-success-dark {
+  background-color: #579501 !important;
+}
+
+.background-success-light {
+  background-color: #addf67 !important;
+}
+
+.background-success-lighter {
+  background-color: #e4f4cc !important;
+}
+
+.background-warning {
+  background-color: #f99b1d !important;
+}
+
+.background-warning-darker {
+  background-color: #955d11 !important;
+}
+
+.background-warning-dark {
+  background-color: #b87315 !important;
+}
+
+.background-warning-light {
+  background-color: #fbc377 !important;
+}
+
+.background-warning-lighter {
+  background-color: #feebd2 !important;
+}
+
+.background-danger {
+  background-color: #ed1c24 !important;
+}
+
+.background-danger-darker {
+  background-color: #8e1116 !important;
+}
+
+.background-danger-dark {
+  background-color: #af151b !important;
+}
+
+.background-danger-light {
+  background-color: #f4777c !important;
+}
+
+.background-danger-lighter {
+  background-color: #fbd2d3 !important;
+}
+
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+.btn,
+.mx-button {
+  /* MXID / Bootstrap values for when used in non-mendix apps */
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 8px 14px;
+  background-color: #DDDDDD;
+  color: #555;
+  text-shadow: none;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+.btn:hover, .btn:focus, .btn:active,
+.mx-button:hover,
+.mx-button:focus,
+.mx-button:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.mx-link {
+  padding: 0;
+  color: #0595db;
+}
+.mx-link a {
+  color: inherit;
+}
+
+.btn img,
+.mx-button img,
+.mx-link img {
+  margin-top: -1px;
+  height: 18px;
+}
+
+.dj_ie8 .mx-link {
+  margin-right: 0;
+  white-space: normal;
+}
+
+.btn-default {
+  border-color: #DDDDDD;
+  background-color: #DDDDDD;
+  color: #555;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  border-color: #c4c4c4;
+  background-color: #c4c4c4;
+  color: #555;
+}
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  border-color: #DDDDDD;
+  background-color: #DDDDDD;
+}
+.btn-default.btn-bordered {
+  background-color: transparent;
+  color: #DDDDDD;
+}
+.btn-default.btn-bordered:hover, .btn-default.btn-bordered:focus, .btn-default.btn-bordered:active, .btn-default.btn-bordered.active, .open > .btn-default.btn-bordered.dropdown-toggle {
+  background-color: #DDDDDD;
+  border-color: #DDDDDD;
+  color: #555;
+}
+
+.btn-primary, .mx-grid.datagrid-fullsearch .mx-grid-search-button, .mx-grid.multilevel-grid .mx-grid-search-button {
+  border-color: #0595db;
+  background-color: #0595db;
+  color: #FFF;
+}
+.btn-primary:hover, .mx-grid.datagrid-fullsearch .mx-grid-search-button:hover, .mx-grid.multilevel-grid .mx-grid-search-button:hover, .btn-primary:focus, .mx-grid.datagrid-fullsearch .mx-grid-search-button:focus, .mx-grid.multilevel-grid .mx-grid-search-button:focus, .btn-primary:active, .mx-grid.datagrid-fullsearch .mx-grid-search-button:active, .mx-grid.multilevel-grid .mx-grid-search-button:active, .btn-primary.active, .mx-grid.datagrid-fullsearch .active.mx-grid-search-button, .mx-grid.multilevel-grid .active.mx-grid-search-button, .open > .btn-primary.dropdown-toggle, .mx-grid.datagrid-fullsearch .open > .dropdown-toggle.mx-grid-search-button, .mx-grid.multilevel-grid .open > .dropdown-toggle.mx-grid-search-button {
+  border-color: #0473a9;
+  background-color: #0473a9;
+  color: #FFF;
+}
+.btn-primary:active, .mx-grid.datagrid-fullsearch .mx-grid-search-button:active, .mx-grid.multilevel-grid .mx-grid-search-button:active, .btn-primary.active, .mx-grid.datagrid-fullsearch .active.mx-grid-search-button, .mx-grid.multilevel-grid .active.mx-grid-search-button, .open > .btn-primary.dropdown-toggle, .mx-grid.datagrid-fullsearch .open > .dropdown-toggle.mx-grid-search-button, .mx-grid.multilevel-grid .open > .dropdown-toggle.mx-grid-search-button {
+  background-image: none;
+}
+.btn-primary.disabled, .mx-grid.datagrid-fullsearch .disabled.mx-grid-search-button, .mx-grid.multilevel-grid .disabled.mx-grid-search-button, .btn-primary.disabled:hover, .mx-grid.datagrid-fullsearch .disabled.mx-grid-search-button:hover, .mx-grid.multilevel-grid .disabled.mx-grid-search-button:hover, .btn-primary.disabled:focus, .mx-grid.datagrid-fullsearch .disabled.mx-grid-search-button:focus, .mx-grid.multilevel-grid .disabled.mx-grid-search-button:focus, .btn-primary.disabled:active, .mx-grid.datagrid-fullsearch .disabled.mx-grid-search-button:active, .mx-grid.multilevel-grid .disabled.mx-grid-search-button:active, .btn-primary.disabled.active, .mx-grid.datagrid-fullsearch .disabled.active.mx-grid-search-button, .mx-grid.multilevel-grid .disabled.active.mx-grid-search-button, .btn-primary[disabled], .mx-grid.datagrid-fullsearch [disabled].mx-grid-search-button, .mx-grid.multilevel-grid [disabled].mx-grid-search-button, .btn-primary[disabled]:hover, .mx-grid.datagrid-fullsearch [disabled].mx-grid-search-button:hover, .mx-grid.multilevel-grid [disabled].mx-grid-search-button:hover, .btn-primary[disabled]:focus, .mx-grid.datagrid-fullsearch [disabled].mx-grid-search-button:focus, .mx-grid.multilevel-grid [disabled].mx-grid-search-button:focus, .btn-primary[disabled]:active, .mx-grid.datagrid-fullsearch [disabled].mx-grid-search-button:active, .mx-grid.multilevel-grid [disabled].mx-grid-search-button:active, .btn-primary[disabled].active, .mx-grid.datagrid-fullsearch [disabled].active.mx-grid-search-button, .mx-grid.multilevel-grid [disabled].active.mx-grid-search-button, fieldset[disabled] .btn-primary, fieldset[disabled] .mx-grid.datagrid-fullsearch .mx-grid-search-button, .mx-grid.datagrid-fullsearch fieldset[disabled] .mx-grid-search-button, fieldset[disabled] .mx-grid.multilevel-grid .mx-grid-search-button, .mx-grid.multilevel-grid fieldset[disabled] .mx-grid-search-button, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .mx-grid.datagrid-fullsearch .mx-grid-search-button:hover, .mx-grid.datagrid-fullsearch fieldset[disabled] .mx-grid-search-button:hover, fieldset[disabled] .mx-grid.multilevel-grid .mx-grid-search-button:hover, .mx-grid.multilevel-grid fieldset[disabled] .mx-grid-search-button:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .mx-grid.datagrid-fullsearch .mx-grid-search-button:focus, .mx-grid.datagrid-fullsearch fieldset[disabled] .mx-grid-search-button:focus, fieldset[disabled] .mx-grid.multilevel-grid .mx-grid-search-button:focus, .mx-grid.multilevel-grid fieldset[disabled] .mx-grid-search-button:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .mx-grid.datagrid-fullsearch .mx-grid-search-button:active, .mx-grid.datagrid-fullsearch fieldset[disabled] .mx-grid-search-button:active, fieldset[disabled] .mx-grid.multilevel-grid .mx-grid-search-button:active, .mx-grid.multilevel-grid fieldset[disabled] .mx-grid-search-button:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] .mx-grid.datagrid-fullsearch .active.mx-grid-search-button, .mx-grid.datagrid-fullsearch fieldset[disabled] .active.mx-grid-search-button, fieldset[disabled] .mx-grid.multilevel-grid .active.mx-grid-search-button, .mx-grid.multilevel-grid fieldset[disabled] .active.mx-grid-search-button {
+  border-color: #0595db;
+  background-color: #0595db;
+}
+.btn-primary.btn-bordered, .mx-grid.datagrid-fullsearch .btn-bordered.mx-grid-search-button, .mx-grid.multilevel-grid .btn-bordered.mx-grid-search-button {
+  background-color: transparent;
+  color: #0595db;
+}
+.btn-primary.btn-bordered:hover, .mx-grid.datagrid-fullsearch .btn-bordered.mx-grid-search-button:hover, .mx-grid.multilevel-grid .btn-bordered.mx-grid-search-button:hover, .btn-primary.btn-bordered:focus, .mx-grid.datagrid-fullsearch .btn-bordered.mx-grid-search-button:focus, .mx-grid.multilevel-grid .btn-bordered.mx-grid-search-button:focus, .btn-primary.btn-bordered:active, .mx-grid.datagrid-fullsearch .btn-bordered.mx-grid-search-button:active, .mx-grid.multilevel-grid .btn-bordered.mx-grid-search-button:active, .btn-primary.btn-bordered.active, .mx-grid.datagrid-fullsearch .btn-bordered.active.mx-grid-search-button, .mx-grid.multilevel-grid .btn-bordered.active.mx-grid-search-button, .open > .btn-primary.btn-bordered.dropdown-toggle, .mx-grid.datagrid-fullsearch .open > .btn-bordered.dropdown-toggle.mx-grid-search-button, .mx-grid.multilevel-grid .open > .btn-bordered.dropdown-toggle.mx-grid-search-button {
+  background-color: #0595db;
+  border-color: #0595db;
+  color: #FFF;
+}
+
+.btn-inverse {
+  border-color: #4D4d4d;
+  background-color: #4D4d4d;
+  color: #FFF;
+}
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  border-color: #343434;
+  background-color: #343434;
+  color: #FFF;
+}
+.btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  background-image: none;
+}
+.btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active, fieldset[disabled] .btn-inverse, fieldset[disabled] .btn-inverse:hover, fieldset[disabled] .btn-inverse:focus, fieldset[disabled] .btn-inverse:active, fieldset[disabled] .btn-inverse.active {
+  border-color: #4D4d4d;
+  background-color: #4D4d4d;
+}
+.btn-inverse.btn-bordered {
+  background-color: transparent;
+  color: #4D4d4d;
+}
+.btn-inverse.btn-bordered:hover, .btn-inverse.btn-bordered:focus, .btn-inverse.btn-bordered:active, .btn-inverse.btn-bordered.active, .open > .btn-inverse.btn-bordered.dropdown-toggle {
+  background-color: #4D4d4d;
+  border-color: #4D4d4d;
+  color: #FFF;
+}
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  background-color: #676767;
+  border-color: #676767;
+}
+
+.btn-success {
+  border-color: #76ca02;
+  background-color: #76ca02;
+  color: #FFF;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  border-color: #599802;
+  background-color: #599802;
+  color: #FFF;
+}
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  background-image: none;
+}
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+  border-color: #76ca02;
+  background-color: #76ca02;
+}
+.btn-success.btn-bordered {
+  background-color: transparent;
+  color: #76ca02;
+}
+.btn-success.btn-bordered:hover, .btn-success.btn-bordered:focus, .btn-success.btn-bordered:active, .btn-success.btn-bordered.active, .open > .btn-success.btn-bordered.dropdown-toggle {
+  background-color: #76ca02;
+  border-color: #76ca02;
+  color: #FFF;
+}
+
+.btn-info {
+  border-color: #48B0F7;
+  background-color: #48B0F7;
+  color: #FFF;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  border-color: #179bf5;
+  background-color: #179bf5;
+  color: #FFF;
+}
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  background-image: none;
+}
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+  border-color: #48B0F7;
+  background-color: #48B0F7;
+}
+.btn-info.btn-bordered {
+  background-color: transparent;
+  color: #48B0F7;
+}
+.btn-info.btn-bordered:hover, .btn-info.btn-bordered:focus, .btn-info.btn-bordered:active, .btn-info.btn-bordered.active, .open > .btn-info.btn-bordered.dropdown-toggle {
+  background-color: #48B0F7;
+  border-color: #48B0F7;
+  color: #FFF;
+}
+
+.btn-warning {
+  border-color: #f99b1d;
+  background-color: #f99b1d;
+  color: #FFF;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  border-color: #dd8106;
+  background-color: #dd8106;
+  color: #FFF;
+}
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  background-image: none;
+}
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+  border-color: #f99b1d;
+  background-color: #f99b1d;
+}
+.btn-warning.btn-bordered {
+  background-color: transparent;
+  color: #f99b1d;
+}
+.btn-warning.btn-bordered:hover, .btn-warning.btn-bordered:focus, .btn-warning.btn-bordered:active, .btn-warning.btn-bordered.active, .open > .btn-warning.btn-bordered.dropdown-toggle {
+  background-color: #f99b1d;
+  border-color: #f99b1d;
+  color: #FFF;
+}
+
+.btn-danger {
+  border-color: #ed1c24;
+  background-color: #ed1c24;
+  color: #FFF;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  border-color: #c61017;
+  background-color: #c61017;
+  color: #FFF;
+}
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  background-image: none;
+}
+.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+  border-color: #ed1c24;
+  background-color: #ed1c24;
+}
+.btn-danger.btn-bordered {
+  background-color: transparent;
+  color: #ed1c24;
+}
+.btn-danger.btn-bordered:hover, .btn-danger.btn-bordered:focus, .btn-danger.btn-bordered:active, .btn-danger.btn-bordered.active, .open > .btn-danger.btn-bordered.dropdown-toggle {
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+  color: #FFF;
+}
+
+.btn-link {
+  border: 0;
+  background-color: transparent;
+  color: #0595db;
+}
+.btn-link:hover {
+  background-color: transparent;
+  color: #036290;
+}
+
+/* Buttons appear disabled */
+.btn-disabled {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  /* For IE8 and earlier */
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-transparent,
+.btn-transparent:hover,
+.btn-transparent:focus {
+  border-style: none;
+  background-color: transparent;
+}
+
+.btn-lg {
+  font-size: 18px;
+  padding: 11px 18px;
+}
+.btn-lg img {
+  height: 18px;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 7px 12px;
+}
+.btn-sm img {
+  height: 16px;
+}
+
+/* Buttons Image */
+.btn-image {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+  vertical-align: middle;
+}
+.btn-image img {
+  height: auto;
+  display: block;
+}
+.btn-image:hover, .btn-image:focus {
+  background-color: transparent;
+}
+
+/* Buttons Position */
+.btn-right {
+  float: right;
+}
+
+.btn-left {
+  float: left;
+}
+
+/* Buttons Attached */
+.btn-attached-right {
+  margin-left: 5px;
+}
+
+.btn-attached-left {
+  margin-right: 5px;
+}
+
+.btn-attached-bottom {
+  margin-top: 5px;
+}
+
+.btn-attached-top {
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   Grid
+
+   Default Mendix Grid (used for Mendix Datagrid)
+========================================================================== */
+.mx-grid {
+  border-radius: 0;
+  padding: 0px;
+  border: 0;
+}
+.mx-grid .mx-grid-controlbar {
+  margin: 10px 0;
+  /* Paging */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar {
+  /* Buttons */
+  /* Text Paging .. to .. to .. */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button {
+  padding: 6px;
+  background-color: transparent;
+  color: #999;
+  border-color: transparent;
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button:hover {
+  background-color: transparent;
+  color: #0595db;
+  border-color: transparent;
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button.disabled, .mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button[disabled] {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-grid-paging-status {
+  padding: 0 8px 8px;
+}
+.mx-grid .mx-grid-searchbar {
+  margin: 10px 0;
+}
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+  vertical-align: middle;
+}
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label label {
+  padding-top: 5px;
+}
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .form-control, .mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .form-disabled p, .form-disabled .mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input p {
+  height: 28px;
+  font-size: 11px;
+}
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input select.form-control {
+  vertical-align: middle;
+  padding: 3px;
+}
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .mx-button {
+  height: 28px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Remove default border from grid inside a Mendix Dataview */
+.mx-dataview .mx-grid {
+  border: 0;
+}
+
+/* ==========================================================================
+   Datagrid Default
+
+   Default Mendix Datagrid Widget. The datagrid shows a list of objects in a grid
+========================================================================== */
+.mx-datagrid .mx-datagrid-head-table {
+  border-width: 0;
+  background-color: transparent;
+  /* Table header */
+}
+.mx-datagrid .mx-datagrid-head-table th {
+  border-left: 0;
+  border-right: 0;
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: #DDD;
+  background-color: transparent;
+}
+.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper {
+  padding: 8px 8px 8px 8px;
+  vertical-align: middle;
+}
+.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper .mx-datagrid-head-caption {
+  white-space: normal;
+}
+.mx-datagrid .mx-datagrid-body-table {
+  border-width: 0;
+  /* Table Body */
+  /* Table Footer */
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  padding: 8px 8px 8px 8px;
+  background-color: #FFF;
+  border-width: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #DDD;
+  vertical-align: middle;
+  /* Text without spaces */
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td:focus {
+  outline: none;
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td .mx-datagrid-data-wrapper {
+  text-overflow: ellipsis;
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected td, .mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td {
+  background-color: #0595db !important;
+  color: #FFF;
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-foot > tr > th {
+  padding: 8px 8px 8px 8px;
+  background-color: #DDD;
+  border-width: 0;
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-foot > tr > td {
+  background-color: #FFF;
+  border-width: 0;
+  font-weight: bold;
+  padding: 8px 8px 8px 8px;
+}
+.mx-datagrid .mx-datagrid-body-table *:focus {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Datagrid Striped
+
+   Default Mendix Datagrid Widget with striped rows
+========================================================================== */
+.datagrid-striped.mx-datagrid .mx-datagrid-head-table th {
+  border-width: 0;
+}
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table {
+  /* Body */
+}
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  border-top-width: 0;
+}
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr:nth-child(odd) td {
+  background-color: #eaeaea;
+}
+
+/* ==========================================================================
+   Datagrid Bordered
+
+   Default Mendix Datagrid Widget with borders
+========================================================================== */
+.datagrid-bordered.mx-datagrid .mx-datagrid-head-table th {
+  border: 1px solid #DDD;
+  border-bottom-width: 1px;
+}
+.datagrid-bordered.mx-datagrid .mx-datagrid-body-table {
+  border: 1px solid;
+}
+.datagrid-bordered.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  border: 1px solid #DDD;
+}
+.datagrid-bordered.mx-datagrid .mx-datagrid-foot > tr > th {
+  background-color: #DDD;
+  border-width: 0;
+}
+.datagrid-bordered.mx-datagrid .mx-datagrid-foot > tr > td {
+  border-width: 1px;
+}
+
+/* ==========================================================================
+   Datagrid Hover
+
+   Default Mendix Datagrid Widget with hover
+========================================================================== */
+.datagrid-hover.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr:hover td, .mx-datagrid.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr:hover td {
+  background-color: #c7e3f1 !important;
+}
+.datagrid-hover.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td, .mx-datagrid.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td {
+  background-color: #c7e3f1 !important;
+}
+
+/* ==========================================================================
+   Datagrid Large
+
+   Default Mendix Datagrid Widget with large rows
+========================================================================== */
+.datagrid-large.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper {
+  padding: 15px 10px;
+}
+.datagrid-large.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  padding: 15px 10px;
+}
+
+/* ==========================================================================
+   Datagrid Transparent
+
+   Default Mendix Datagrid Widget with transparent background for row and cells
+========================================================================== */
+.datagrid-transparent.mx-datagrid .mx-datagrid-head-table, .mx-datagrid.multilevel-grid .mx-datagrid-head-table {
+  background-color: transparent;
+}
+.datagrid-transparent.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr:nth-of-type(odd), .mx-datagrid.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr:nth-of-type(odd) {
+  background-color: transparent;
+}
+.datagrid-transparent.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td, .mx-datagrid.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   Datagrid Full Search
+
+   Default Mendix Datagrid Widget with adjusted search field. Only 1 search field is allowed
+========================================================================== */
+.mx-grid.datagrid-fullsearch .mx-grid-reset-button, .mx-grid.multilevel-grid .mx-grid-reset-button {
+  display: none;
+}
+.mx-grid.datagrid-fullsearch .mx-grid-search-item, .mx-grid.multilevel-grid .mx-grid-search-item {
+  display: block;
+}
+.mx-grid.datagrid-fullsearch .mx-grid-search-label, .mx-grid.multilevel-grid .mx-grid-search-label {
+  display: none;
+}
+.mx-grid.datagrid-fullsearch .mx-grid-searchbar .mx-grid-search-controls, .mx-grid.multilevel-grid .mx-grid-searchbar .mx-grid-search-controls {
+  position: absolute;
+  right: 0;
+}
+.mx-grid.datagrid-fullsearch .mx-grid-searchbar .mx-grid-search-input, .mx-grid.multilevel-grid .mx-grid-searchbar .mx-grid-search-input {
+  width: 80%;
+  padding-left: 0;
+}
+.mx-grid.datagrid-fullsearch .mx-grid-searchbar .mx-grid-search-input .form-control, .mx-grid.multilevel-grid .mx-grid-searchbar .mx-grid-search-input .form-control, .mx-grid.datagrid-fullsearch .mx-grid-searchbar .mx-grid-search-input .form-disabled p, .form-disabled .mx-grid.datagrid-fullsearch .mx-grid-searchbar .mx-grid-search-input p, .mx-grid.multilevel-grid .mx-grid-searchbar .mx-grid-search-input .form-disabled p, .form-disabled .mx-grid.multilevel-grid .mx-grid-searchbar .mx-grid-search-input p {
+  height: 35px;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   Dataview
+
+   Default Mendix Dataview Widget. The data view is used for showing the contents of exactly one object
+========================================================================== */
+.mx-dataview {
+  /* Control bar */
+  /* Dataview-content gives problems for nexted layout grid containers */
+  /* Dataview empty message */
+}
+.mx-dataview .mx-dataview-controls {
+  border-radius: 0;
+  clear: both;
+  margin-top: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #DDD;
+  background-color: transparent;
+  /* Buttons */
+}
+.mx-dataview .mx-dataview-controls .mx-button {
+  margin-bottom: 0;
+  margin-right: 0.3em;
+}
+.mx-dataview .mx-dataview-controls .mx-button:last-child {
+  margin-right: 0;
+}
+.mx-dataview > .mx-dataview-content > .mx-container-nested > .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.mx-dataview .mx-dataview-message {
+  background: #FFF;
+  color: #555;
+}
+
+/*
+* Mendix Documentation
+* Special styles for presenting components
+*/
+/*
+* Dijit Widgets
+*
+* Default Dojo Dijit Widgets
+*/
+/*
+ * Dijit Calendar Widget
+ *
+ * Used in dataviews
+ */
+.dijitCalendarContainer {
+  /* (must be higher than popup z-index) */
+  z-index: 10010 !important;
+  background-color: #eff0f2;
+}
+.dijitCalendarContainer tr th {
+  background-color: #26323D;
+  color: #FFF;
+  text-align: center;
+}
+.dijitCalendarContainer tr th,
+.dijitCalendarContainer tr td {
+  padding: 6px;
+  text-align: center;
+}
+.dijitCalendarContainer tr td .dijitCalendarDateLabel {
+  color: #000;
+}
+.dijitCalendarContainer tr tfoot h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+.dijitCalendarContainer .dijitCalendarMonthLabel {
+  font-weight: bold;
+}
+.dijitCalendarContainer .dijitButtonNode {
+  border: 0;
+}
+.dijitCalendarContainer .dijitCalendarArrow {
+  cursor: pointer;
+}
+.dijitCalendarContainer .dijitCalendarSelectedDate,
+.dijitCalendarContainer .dijitCalendarSelectedDate:hover {
+  border-radius: 10px;
+  background: #0595db;
+}
+.dijitCalendarContainer .dijitCalendarSelectedDate .dijitCalendarDateLabel,
+.dijitCalendarContainer .dijitCalendarSelectedDate:hover .dijitCalendarDateLabel {
+  color: #fff;
+}
+.dijitCalendarContainer .dijitCalendarHoveredDate,
+.dijitCalendarContainer .dijitCalendarPreviousYearHover,
+.dijitCalendarContainer .dijitCalendarNextYearHover,
+.dijitCalendarContainer .dijitCalendarMonthLabelHover {
+  border-radius: 10px;
+  background-color: #dbdcdd;
+}
+.dijitCalendarContainer .dijitCalendarYearContainer td {
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #000;
+}
+.dijitCalendarContainer .dijitCalendarYearContainer td .dijitCalendarSelectedYear {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+  border-top-left-radius: 3px;
+}
+.dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+  border-top-right-radius: 3px;
+}
+
+.dijitCalendarMonthMenuPopup {
+  border-radius: 3px;
+  /* (must be higher than popup z-index) */
+  z-index: 10020 !important;
+  padding: 3px 4px;
+  background-color: #26323D;
+}
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu {
+  border-style: none;
+  background: none;
+}
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel {
+  padding: 2px 0;
+  color: #FFF;
+}
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel:hover, .dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel:focus {
+  color: #4280cb;
+}
+
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 3px;
+}
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0px;
+}
+
+/*
+ * Dijit Tooltip Widget
+ *
+ * Default tooltip used for Mendix widgets
+ */
+.mx-tooltip .dijitTooltipContainer {
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-width: 1px;
+  border-color: #999;
+  background: #FFF;
+}
+.mx-tooltip .dijitTooltipContainer .mx-tooltip-content {
+  padding: 10px;
+}
+.mx-tooltip .dijitTooltipContainer .form-group {
+  margin-bottom: 5px;
+}
+.mx-tooltip .dijitTooltipConnector {
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: #999;
+}
+
+/*
+ * Dijit Border Container
+ *
+ * Used in Mendix as split pane containers
+ */
+.dijitBorderContainer {
+  padding: 5px;
+  background-color: #fcfcfc;
+}
+.dijitBorderContainer .dijitSplitterV,
+.dijitBorderContainer .dijitGutterV {
+  width: 5px;
+  border: 0;
+  background: #fcfcfc;
+}
+.dijitBorderContainer .dijitSplitterH,
+.dijitBorderContainer .dijitGutterH {
+  height: 5px;
+  border: 0;
+  background: #fcfcfc;
+}
+.dijitBorderContainer .dijitSplitterH .dijitSplitterThumb {
+  top: 2px;
+  width: 19px;
+  height: 1px;
+  background: #B0B0B0;
+}
+.dijitBorderContainer .dijitSplitterV .dijitSplitterThumb {
+  left: 2px;
+  width: 1px;
+  height: 19px;
+  background: #B0B0B0;
+}
+.dijitBorderContainer .dijitSplitContainer-child,
+.dijitBorderContainer .dijitBorderContainer-child {
+  border: 1px solid #ccc;
+}
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerTop,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerBottom,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerLeft,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerRight {
+  border: none;
+}
+.dijitBorderContainer .dijitBorderContainer-dijitBorderContainer {
+  padding: 0;
+  border: none;
+}
+.dijitBorderContainer .dijitSplitterActive {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+  margin: 0;
+  background-color: #aaa;
+  background-image: none;
+  font-size: 1px;
+}
+.dijitBorderContainer .dijitSplitContainer-dijitContentPane,
+.dijitBorderContainer .dijitBorderContainer-dijitContentPane {
+  padding: 5px;
+  background-color: #fff;
+}
+
+/*
+ * Dijit Menu Popup
+ *
+ * Used in datepickers and calendar widgets
+ */
+.dijitMenuPopup {
+  margin-top: 10px;
+}
+.dijitMenuPopup .dijitMenu {
+  border-radius: 3px;
+  display: block;
+  margin-top: 0;
+  padding: 12px 10px;
+  background: #4D4d4d;
+  width: 200px !important;
+}
+.dijitMenuPopup .dijitMenu:after {
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  margin-left: -10px;
+  width: 0px;
+  height: 0px;
+  border: medium solid transparent;
+  border-width: 10px;
+  border-bottom-color: #4D4d4d;
+  content: " ";
+  pointer-events: none;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuItem {
+  background: transparent;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuItem .dijitMenuItemLabel {
+  border-radius: 3px;
+  padding: 10px;
+  color: #FFF;
+  width: 180px !important;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover {
+  background: none;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover .dijitMenuItemLabel {
+  background: #0595db;
+}
+.dijitMenuPopup .dijitMenu .tg_newlabelmenuitem .dijitMenuItemLabel {
+  font-weight: bold;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuSeparator td {
+  padding: 0;
+  border-bottom-width: 3px;
+}
+.dijitMenuPopup .dijitMenu .dijitMenuSeparator .dijitMenuSeparatorIconCell > div {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Glyphicons
+
+   Glyphicons alternaed to use with Mendix
+========================================================================== */
+.mx-glyphicon:before {
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-right: 0.4555555em;
+  margin-top: -0.2em;
+  line-height: inherit;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Groupbox
+
+   Default Mendix Groupboxes
+========================================================================== */
+.mx-groupbox > .mx-groupbox-header {
+  font-weight: bold;
+  border-radius: 0;
+  margin: 0;
+  background: #DDDDDD;
+  color: #000;
+  font-size: 16px;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #DDDDDD;
+}
+.mx-groupbox > .mx-groupbox-header .mx-groupbox-collapse-icon {
+  margin-top: 0.1em;
+}
+.mx-groupbox > .mx-groupbox-body {
+  border-radius: 0;
+  padding: 10px 15px;
+  border-color: #DDDDDD;
+  background-color: #FFF;
+  border-style: solid;
+  border-width: 1px;
+}
+.mx-groupbox .mx-groupbox-header + .mx-groupbox-body {
+  border-radius: 0;
+  border-top: none;
+}
+.mx-groupbox.collapsed > .mx-groupbox-header {
+  border-radius: 0;
+}
+
+/* ==========================================================================
+   Groupbox Callouts
+
+   Default Mendix Groupboxes rendered as (Bootstrap) callouts
+========================================================================== */
+.mx-groupbox.groupbox-stylingless > .mx-groupbox-header {
+  border-radius: 0;
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+}
+.mx-groupbox.groupbox-stylingless > .mx-groupbox-body {
+  border-radius: 0;
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+}
+.mx-groupbox.groupbox-border-radius > .mx-groupbox-header {
+  border-radius: 3px 3px 0 0 !important;
+}
+.mx-groupbox.groupbox-border-radius > .mx-groupbox-body {
+  border-radius: 3px !important;
+}
+.mx-groupbox.groupbox-border-radius .mx-groupbox-header + .mx-groupbox-body {
+  border-radius: 0 0 3px 3px !important;
+}
+.mx-groupbox.groupbox-borderless > .mx-groupbox-body {
+  border: 0 !important;
+}
+.mx-groupbox.groupbox-border-top > .mx-groupbox-header {
+  border-style: none;
+  border-top-style: solid !important;
+}
+.mx-groupbox.groupbox-border-top > .mx-groupbox-body {
+  border-style: none;
+  border-top-style: solid !important;
+}
+.mx-groupbox.groupbox-border-top .mx-groupbox-header + .mx-groupbox-body {
+  border-top-style: none !important;
+}
+.mx-groupbox.groupbox-border-right > .mx-groupbox-header {
+  border-style: none;
+  border-right-style: solid !important;
+}
+.mx-groupbox.groupbox-border-right > .mx-groupbox-body {
+  border-style: none;
+  border-right-style: solid !important;
+}
+.mx-groupbox.groupbox-border-bottom > .mx-groupbox-header {
+  border-style: none;
+}
+.mx-groupbox.groupbox-border-bottom > .mx-groupbox-body {
+  border-style: none;
+  border-bottom-style: solid !important;
+}
+.mx-groupbox.groupbox-border-left > .mx-groupbox-header {
+  border-style: none;
+  border-left-style: solid !important;
+}
+.mx-groupbox.groupbox-border-left > .mx-groupbox-body {
+  border-style: none;
+  border-left-style: solid !important;
+}
+
+/* ==========================================================================
+   Groupbox Colors
+========================================================================== */
+.mx-groupbox.groupbox-default > .mx-groupbox-header {
+  background: #DDDDDD;
+  color: #000;
+  border-color: #DDDDDD;
+}
+.mx-groupbox.groupbox-default > .mx-groupbox-body {
+  border-color: #DDDDDD;
+}
+.mx-groupbox.groupbox-primary > .mx-groupbox-header {
+  background: #0595db;
+  color: #FFF;
+  border-color: #0595db;
+}
+.mx-groupbox.groupbox-primary > .mx-groupbox-body {
+  border-color: #0595db;
+}
+.mx-groupbox.groupbox-inverse > .mx-groupbox-header {
+  background: #4D4d4d;
+  color: #FFF;
+  border-color: #4D4d4d;
+}
+.mx-groupbox.groupbox-inverse > .mx-groupbox-body {
+  border-color: #4D4d4d;
+}
+.mx-groupbox.groupbox-success > .mx-groupbox-header {
+  background: #76ca02;
+  color: #FFF;
+  border-color: #76ca02;
+}
+.mx-groupbox.groupbox-success > .mx-groupbox-body {
+  border-color: #76ca02;
+}
+.mx-groupbox.groupbox-info > .mx-groupbox-header {
+  background: #48B0F7;
+  color: #FFF;
+  border-color: #48B0F7;
+}
+.mx-groupbox.groupbox-info > .mx-groupbox-body {
+  border-color: #48B0F7;
+}
+.mx-groupbox.groupbox-warning > .mx-groupbox-header {
+  background: #f99b1d;
+  color: #FFF;
+  border-color: #f99b1d;
+}
+.mx-groupbox.groupbox-warning > .mx-groupbox-body {
+  border-color: #f99b1d;
+}
+.mx-groupbox.groupbox-danger > .mx-groupbox-header {
+  background: #ed1c24;
+  color: #FFF;
+  border-color: #ed1c24;
+}
+.mx-groupbox.groupbox-danger > .mx-groupbox-body {
+  border-color: #ed1c24;
+}
+.mx-groupbox.groupbox-white > .mx-groupbox-header {
+  background: #FFF;
+  color: #555;
+  border-color: #FFF;
+}
+.mx-groupbox.groupbox-white > .mx-groupbox-body {
+  border-color: #FFF;
+}
+.mx-groupbox.groupbox-transparent {
+  background-color: transparent;
+}
+.mx-groupbox.groupbox-transparent > .mx-groupbox-header {
+  border-style: none;
+  background-color: transparent;
+}
+.mx-groupbox.groupbox-transparent > .mx-groupbox-body {
+  border-style: none;
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   Groupbox Spacing
+========================================================================== */
+.mx-groupbox.groupbox-sideless > .mx-groupbox-header {
+  padding-right: 0;
+  padding-left: 0;
+}
+.mx-groupbox.groupbox-sideless > .mx-groupbox-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+.mx-groupbox.groupbox-bodyless > .mx-groupbox-body {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Groupbox Headers
+========================================================================== */
+.mx-groupbox.groupbox-h1 > .mx-groupbox-header {
+  font-size: 31px;
+}
+.mx-groupbox.groupbox-h2 > .mx-groupbox-header {
+  font-size: 26px;
+}
+.mx-groupbox.groupbox-h3 > .mx-groupbox-header {
+  font-size: 20px;
+}
+.mx-groupbox.groupbox-h4 > .mx-groupbox-header {
+  font-size: 16px;
+}
+.mx-groupbox.groupbox-h5 > .mx-groupbox-header {
+  font-size: 14px;
+}
+.mx-groupbox.groupbox-h6 > .mx-groupbox-header {
+  font-size: 11px;
+}
+
+/* ==========================================================================
+   Groupbox Callouts
+========================================================================== */
+.mx-groupbox.groupbox-callout > .mx-groupbox-header,
+.mx-groupbox.groupbox-callout > .mx-groupbox-body {
+  border: 0;
+}
+.mx-groupbox.groupbox-callout .mx-groupbox-header + .mx-groupbox-body {
+  padding-top: 0;
+}
+.mx-groupbox.groupbox-callout-info > .mx-groupbox-header,
+.mx-groupbox.groupbox-callout-info > .mx-groupbox-body {
+  background-color: #daeffd;
+}
+.mx-groupbox.groupbox-callout-info > .mx-groupbox-header {
+  color: #48B0F7;
+}
+.mx-groupbox.groupbox-callout-success > .mx-groupbox-header,
+.mx-groupbox.groupbox-callout-success > .mx-groupbox-body {
+  background-color: #e4f4cc;
+}
+.mx-groupbox.groupbox-callout-success > .mx-groupbox-header {
+  color: #76ca02;
+}
+.mx-groupbox.groupbox-callout-warning > .mx-groupbox-header,
+.mx-groupbox.groupbox-callout-warning > .mx-groupbox-body {
+  background-color: #feebd2;
+}
+.mx-groupbox.groupbox-callout-warning > .mx-groupbox-header {
+  color: #f99b1d;
+}
+.mx-groupbox.groupbox-callout-danger > .mx-groupbox-header,
+.mx-groupbox.groupbox-callout-danger > .mx-groupbox-body {
+  background-color: #fbd2d3;
+}
+.mx-groupbox.groupbox-callout-danger > .mx-groupbox-header {
+  color: #ed1c24;
+}
+
+/* ==========================================================================
+   Helpers
+
+   Default Mendix Helpers
+========================================================================== */
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.display-ie8-only:not([attr*='']) {
+  display: none;
+  padding: 0;
+}
+
+.list-nostyle ul {
+  padding: 0;
+  margin: 0;
+}
+.list-nostyle ul li {
+  list-style-type: none !important;
+}
+
+.nowrap,
+.nowrap * {
+  white-space: nowrap;
+}
+
+.form-disabled p {
+  background-color: #eee !important;
+}
+
+.padding-bottom-none {
+  padding-bottom: 0;
+}
+
+/* Vertical Align Elements in a bootstrap row, add class on row */
+.v-center {
+  display: table;
+  width: 100%;
+}
+.v-center div[class*='col-'] {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+/* Remove padding for Bootstrap columns, add class on row */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Render DIV as Table Cells */
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+/* ==========================================================================
+   Images
+
+   Default Mendix Image Widgets
+========================================================================== */
+img.img-rounded,
+.img-rounded img {
+  border-radius: 6px;
+}
+
+img.img-thumbnail,
+.img-thumbnail img {
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+}
+
+img.img-circle,
+.img-circle img {
+  border-radius: 50%;
+}
+
+img.img-auto,
+.img-auto img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+/* ==========================================================================
+   Labels
+
+   Default labels combined with Bootstrap labels
+========================================================================== */
+.label {
+  font-weight: bold;
+  border-radius: .25em;
+  display: inline;
+  padding: .2em .6em .3em !important;
+  color: #fff;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 100%;
+  line-height: 1;
+}
+
+.label-default {
+  background-color: #DDDDDD;
+  color: #555;
+}
+
+.label-primary {
+  background-color: #0595db;
+  color: #FFF;
+}
+
+.label-success {
+  background-color: #76ca02;
+  color: #FFF;
+}
+
+.label-info {
+  background-color: #48B0F7;
+  color: #FFF;
+}
+
+.label-warning {
+  background-color: #f99b1d;
+  color: #FFF;
+}
+
+.label-danger {
+  background-color: #ed1c24;
+  color: #FFF;
+}
+
+/* ==========================================================================
+   Listview
+
+   Default Mendix Listview Widget. The list view shows a list of objects arranged vertically. Each object is shown using a template
+========================================================================== */
+.mx-listview {
+  /* Remove widget padding */
+  padding: 0;
+  /* Clear search button (overrides load more button stying) */
+  /* Load more button */
+}
+.mx-listview .mx-button.mx-listview-clear-button {
+  width: auto;
+}
+.mx-listview > .mx-button {
+  width: 100%;
+  margin: 10px auto;
+}
+.mx-listview .mx-listview-list {
+  margin: 0;
+}
+.mx-listview .mx-listview-item {
+  background-color: #FFF;
+  padding: 10px 0;
+}
+.mx-listview .mx-listview-item:hover {
+  background-color: #FFF;
+}
+.mx-listview .mx-listview-item.selected {
+  background-color: #0595db !important;
+}
+.mx-listview .mx-listview-item.selected:hover {
+  background-color: #c7e3f1 !important;
+}
+.mx-listview .mx-listview-item:nth-child(2n+1) {
+  background-color: #FFF;
+}
+.mx-listview .mx-layoutgrid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   Listview Hover
+
+   Default Mendix Listview Widget with hover
+========================================================================== */
+.listview-hover.mx-listview .mx-listview-item:hover, .mx-listview.multilevel-list .mx-listview-item:hover, .listview-hover.mx-listview .mx-listview-item:active, .mx-listview.multilevel-list .mx-listview-item:active {
+  background-color: #c7e3f1 !important;
+}
+
+/* ==========================================================================
+   Listview Lined
+
+   Default Mendix Listview Widget with only border bottom in listview item
+========================================================================== */
+.listview-lined.mx-listview .mx-listview-item, .mx-listview.multilevel-list .mx-listview-item {
+  border-top: 1px solid #DDD;
+  border-right: none;
+  border-left: none;
+}
+.listview-lined.mx-listview .mx-listview-item:first-child, .mx-listview.multilevel-list .mx-listview-item:first-child {
+  border-radius: 0;
+}
+.listview-lined.mx-listview .mx-listview-item:last-child, .mx-listview.multilevel-list .mx-listview-item:last-child {
+  border-radius: 0;
+  border-bottom: 1px solid #DDD;
+}
+
+/* ==========================================================================
+   Listview Striped
+
+   Default Mendix Listview Widget with striped listview items
+========================================================================== */
+.listview-striped.mx-listview .mx-listview-item:nth-child(2n+1) {
+  background-color: #eaeaea;
+}
+
+/* ==========================================================================
+   Listview Seperated
+
+   Default Mendix Listview Widget with listview items seperated
+========================================================================== */
+.listview-seperated.mx-listview .mx-listview-item {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-style: solid;
+}
+
+/* ==========================================================================
+   Listview Stylingless
+
+   Default Mendix Listview Widget with listview items seperated
+========================================================================== */
+.listview-stylingless.mx-listview .mx-listview-item {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+.listview-stylingless.mx-listview .mx-listview-item:hover {
+  background-color: transparent;
+}
+.listview-stylingless.mx-listview .mx-listview-item.selected {
+  background-color: transparent !important;
+}
+.listview-stylingless.mx-listview .mx-listview-item.selected:hover {
+  background-color: transparent !important;
+}
+
+/* ==========================================================================
+   Modals
+
+   Default Mendix Modals. Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults
+========================================================================== */
+.modal-dialog .modal-content {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #DDD;
+}
+.modal-dialog .modal-content .modal-header {
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: transparent;
+  border-bottom-color: #DDD;
+}
+.modal-dialog .modal-content .modal-header h4 {
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+}
+.modal-dialog .modal-content .modal-header .close {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
+  color: #555;
+  text-shadow: none;
+  margin-top: -3px;
+}
+.modal-dialog .modal-content .modal-body {
+  padding: 20px;
+}
+.modal-dialog .modal-content .modal-footer {
+  padding: 20px;
+  margin-top: 0;
+  border-style: none;
+  text-align: left;
+}
+
+/* Default Mendix Window Modal */
+.mx-window.mx-window-view .mx-window-body {
+  padding: 0;
+}
+.mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content,
+.mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+  padding: 20px;
+}
+.mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-controls,
+.mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-controls {
+  padding: 20px;
+  border-style: none;
+  text-align: left;
+  margin: 0;
+}
+.mx-window .mx-dataview-controls {
+  padding-bottom: 0;
+}
+.mx-window .mx-layoutgrid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Default Mendix Login Modal */
+.mx-login .modal-body {
+  padding: 0 15px;
+}
+.mx-login .modal-content input {
+  box-shadow: none;
+  padding: 12px 12px;
+  height: 56px;
+  border: 1px solid #EEE;
+  background: #eee;
+  font-size: 16px;
+}
+.mx-login .modal-content input:focus {
+  border-color: #66afe9;
+}
+.mx-login .modal-header,
+.mx-login .modal-footer {
+  border: 0;
+}
+.mx-login button {
+  font-size: 16px;
+}
+.mx-login h4 {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Bar
+========================================================================== */
+.mx-navbar {
+  border-radius: 0;
+  margin: 0;
+  border-style: none;
+  background-color: #0595db;
+  /* remove focus */
+}
+.mx-navbar ul.nav {
+  margin: 0;
+  /* Navigation item */
+  /* When hovering or the dropdown is open */
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a {
+  font-weight: normal;
+  border-radius: 0;
+  padding: 15px 20px;
+  color: #FFF;
+  font-size: 14px;
+  vertical-align: middle;
+  /* Dropdown arrow */
+  /* Dropdown */
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a:hover, .mx-navbar ul.nav > li.mx-navbar-item > a:focus, .mx-navbar ul.nav > li.mx-navbar-item > a.active {
+  background-color: #0587c7;
+  color: #FFF;
+  text-decoration: none;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a:hover .caret, .mx-navbar ul.nav > li.mx-navbar-item > a:focus .caret, .mx-navbar ul.nav > li.mx-navbar-item > a.active .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a.active {
+  color: #FFF;
+  background-color: #047ab3;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a .mx-navbar-submenu:before {
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-width: 0 9px 9px 9px;
+  border-style: solid;
+  border-color: transparent transparent #0587c7 transparent;
+  content: "";
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a img {
+  width: 20px;
+  height: auto;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a .glyphicon {
+  vertical-align: middle;
+  font-size: 1.2em;
+  top: -1px;
+}
+.mx-navbar ul.nav > .mx-navbar-item > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item > a:focus,
+.mx-navbar ul.nav > .mx-navbar-item.active a,
+.mx-navbar ul.nav > .mx-navbar-item.open > a,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:focus {
+  background-color: #0587c7;
+  color: #FFF;
+  text-decoration: none;
+}
+.mx-navbar ul.nav > .mx-navbar-item > a:hover .caret,
+.mx-navbar ul.nav > .mx-navbar-item > a:focus .caret,
+.mx-navbar ul.nav > .mx-navbar-item.active a .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:hover .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:focus .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+.mx-navbar ul.nav > .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a {
+  background-color: #05a3ef;
+  color: #FFF;
+}
+.mx-navbar ul.nav > .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+@media (max-width: 768px) {
+  .mx-navbar ul.nav > li.mx-navbar-item > a {
+    padding: 10px 20px;
+  }
+  .mx-navbar .mx-navbar-item.open .dropdown-menu {
+    background-color: #05a3ef;
+    border-radius: 0;
+    padding: 0;
+  }
+  .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a {
+    font-weight: normal;
+    padding: 10px 20px;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 12px;
+  }
+  .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a:hover, .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a:focus {
+    color: #FFF;
+    background-color: #05a3ef;
+  }
+  .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a.active {
+    color: #FFF;
+    background-color: #05a3ef;
+  }
+}
+.mx-navbar:focus {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Tree
+========================================================================== */
+.mx-navigationtree {
+  background-color: #4D4d4d;
+  /* Every navigation item */
+  /* Sub navigation item specific */
+  /* remove focus */
+}
+.mx-navigationtree .navbar-inner ul {
+  margin: 0;
+  padding-left: 0;
+}
+.mx-navigationtree .navbar-inner ul li {
+  padding: 0;
+  border-style: none;
+}
+.mx-navigationtree .navbar-inner ul li a {
+  font-weight: normal;
+  display: block;
+  padding: 15px 20px 15px 16px;
+  border-bottom: 1px solid #575757;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: none;
+  font-size: 14px;
+  vertical-align: middle;
+  background-color: #4D4d4d;
+  border-left: 4px solid transparent;
+}
+.mx-navigationtree .navbar-inner ul li a .caret {
+  border-top-color: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+.mx-navigationtree .navbar-inner ul li a img {
+  margin-right: 4px;
+  width: 20px;
+  height: auto;
+}
+.mx-navigationtree .navbar-inner ul li a .glyphicon {
+  vertical-align: middle;
+  font-size: 1.2em;
+  top: -1px;
+}
+.mx-navigationtree .navbar-inner ul li a:hover,
+.mx-navigationtree .navbar-inner ul li a:focus,
+.mx-navigationtree .navbar-inner ul li a.active {
+  background-color: #575757;
+  color: #FFF;
+  text-decoration: none;
+}
+.mx-navigationtree .navbar-inner ul li a:hover .caret,
+.mx-navigationtree .navbar-inner ul li a:focus .caret,
+.mx-navigationtree .navbar-inner ul li a.active .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+.mx-navigationtree .navbar-inner ul li a.active {
+  border-left-color: #FFF;
+  color: #FFF;
+  background-color: #616161;
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul {
+  margin: 0;
+  padding-left: 0;
+  background-color: #434343;
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul li {
+  margin: 0;
+  padding: 0;
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  background-color: #434343;
+  padding: 12px 20px 12px 25px;
+  border: 0;
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a:hover, .mx-navigationtree li.mx-navigationtree-has-items > ul li a:focus, .mx-navigationtree li.mx-navigationtree-has-items > ul li a.active {
+  color: #FFF;
+  background-color: #434343;
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a.active {
+  border: 0;
+  color: #FFF;
+  background-color: #434343;
+}
+.mx-navigationtree:focus {
+  outline: 0;
+}
+
+/* Content Centerd text and icons */
+.mx-navigationtree.nav-content-center-text-icons .navbar-inner ul a {
+  text-align: center;
+}
+.mx-navigationtree.nav-content-center-text-icons .navbar-inner ul a .glyphicon {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Content Centerd icons only */
+.mx-navigationtree.nav-content-center .navbar-inner ul a {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Simple Menu Bar
+========================================================================== */
+.mx-menubar {
+  padding: 0;
+  background-color: #4D4d4d;
+  /* Two menu items */
+  /* Three menu items */
+  /* Four menu items */
+  /* Five menu items */
+  /* remove focus */
+}
+.mx-menubar ul.mx-menubar-list {
+  width: 100%;
+  min-height: 50px;
+  table-layout: fixed;
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a {
+  font-weight: normal;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  padding: 0 8px;
+  text-align: center;
+  line-height: 50px;
+  overflow: hidden;
+  display: block;
+  vertical-align: middle;
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a .glyphicon {
+  vertical-align: middle;
+  font-size: 1.2em;
+  top: -1px;
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a:hover,
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a:focus, .mx-menubar ul.mx-menubar-list li.mx-menubar-item:hover a, .mx-menubar ul.mx-menubar-list li.mx-menubar-item:focus a, .mx-menubar ul.mx-menubar-list li.mx-menubar-item.active a {
+  background-color: #575757;
+  color: #FFF;
+  text-decoration: none;
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item.active a {
+  color: #FFF;
+  background-color: #616161;
+}
+.mx-menubar.menubar-col-6 ul.mx-menubar-list li.mx-menubar-item {
+  width: 50%;
+}
+.mx-menubar.menubar-col-4 ul.mx-menubar-list li.mx-menubar-item {
+  width: 33.33333333%;
+}
+.mx-menubar.menubar-col-3 ul.mx-menubar-list li.mx-menubar-item {
+  width: 25%;
+}
+.mx-menubar.menubar-col-2 ul.mx-menubar-list li.mx-menubar-item {
+  width: 20%;
+}
+.mx-menubar:focus {
+  outline: 0;
+}
+
+/* text and icons centerd */
+.mx-menubar.bottom-nav-text-icons ul.mx-menubar-list li.mx-menubar-item a {
+  line-height: normal;
+  padding: 8px 8px 6px 8px;
+}
+.mx-menubar.bottom-nav-text-icons ul.mx-menubar-list li.mx-menubar-item a .glyphicon {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* Vertical variation specifics */
+.mx-menubar-vertical {
+  background-color: #0595db;
+}
+.mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a {
+  color: #FFF;
+  font-size: 14px;
+  border-bottom: 1px solid #0587c7;
+}
+.mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a .glyphicon {
+  vertical-align: middle;
+  font-size: 1.2em;
+  top: -1px;
+}
+.mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a:hover, .mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a:focus, .mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a.active {
+  background-color: #0587c7;
+  color: #FFF;
+  text-decoration: none;
+}
+.mx-menubar-vertical ul.mx-menubar-list li.mx-menubar-item a.active {
+  color: #FFF;
+  background-color: #047ab3;
+}
+
+/* Horizontal variation specifics */
+.mx-menubar-horizontal ul.mx-menubar-list li.mx-menubar-item {
+  width: auto;
+}
+
+/* ==========================================================================
+   Navigation List
+
+   Default Mendix Navigation List Widget. A navigation list can be used to attach an action to an entire row. Such a row is called a navigation list item
+========================================================================== */
+.mx-navigationlist {
+  padding: 0;
+  margin: 0;
+}
+.mx-navigationlist .mx-navigationlist-item {
+  padding: 15px 20px 15px 16px;
+  border-left: 4px solid transparent;
+  border-bottom: 1px solid #575757;
+  border-top: none;
+  border-radius: 0;
+  background-color: #4D4d4d;
+}
+.mx-navigationlist .mx-navigationlist-item label {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+.mx-navigationlist .mx-navigationlist-item:hover, .mx-navigationlist .mx-navigationlist-item:focus, .mx-navigationlist .mx-navigationlist-item.active {
+  background-color: #575757;
+}
+.mx-navigationlist .mx-navigationlist-item:hover label, .mx-navigationlist .mx-navigationlist-item:focus label, .mx-navigationlist .mx-navigationlist-item.active label {
+  color: #FFF;
+}
+.mx-navigationlist .mx-navigationlist-item.active {
+  border-left-color: #FFF;
+  color: #FFF;
+  background-color: #616161;
+}
+
+/* ==========================================================================
+   Tab Container
+
+   Default Mendix Tab Container Widget. Tab containers are used to show information categorized into multiple tab pages. 
+   This can be very useful if the amount of information that has to be displayed is larger than the amount of space on the screen
+========================================================================== */
+.mx-tabcontainer .mx-tabcontainer-tabs {
+  margin-bottom: 20px;
+  border-color: #DDD;
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  font-weight: normal;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin-right: 0;
+  color: #666666;
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  background-color: #eaeaea;
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  border: 1px solid #DDD;
+  border-bottom-color: transparent;
+  background-color: #FFF;
+  color: #000;
+}
+
+/* ==========================================================================
+   Tab Container Pills
+
+   Default Mendix Tab Container Widget rendered as Pills
+========================================================================== */
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs {
+  border: 0;
+}
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  border-radius: 4px;
+  margin-right: 2px;
+  border: 1px solid #DDD;
+  color: #666666;
+}
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  background-color: #eaeaea;
+}
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  background-color: #0595db;
+  color: #FFF;
+  border-color: #0595db;
+}
+
+/* ==========================================================================
+   Tab Container Lined
+
+   Default Mendix Tab Container Widget rendered with tabs rendered without background
+========================================================================== */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs {
+  border-width: 3px;
+}
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li {
+  margin-bottom: -3px;
+  margin-right: 30px;
+}
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a {
+  padding: 10px 0;
+  border: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 3px;
+  border-radius: 0;
+  color: #666666;
+}
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a:hover, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a:focus {
+  border: 0;
+  border-color: transparent;
+  background: transparent;
+  color: #666666;
+}
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a:hover, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a:focus {
+  border: 0;
+  border-bottom: 3px solid #0595db;
+  background-color: transparent;
+  color: #0595db;
+}
+
+/* ==========================================================================
+   Tab Container Justified
+
+   Default Mendix Tab Container Widget rendered as justified
+========================================================================== */
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs {
+  width: 100%;
+  border-bottom: 0;
+}
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li {
+  display: table-cell;
+  float: none;
+  margin: 0;
+  width: 1%;
+}
+@media (max-width: 768px) {
+  .tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li {
+    display: block;
+    width: 100%;
+  }
+}
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+}
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a {
+  border-radius: 4px;
+  border-bottom-color: transparent;
+}
+@media (max-width: 768px) {
+  .tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a {
+    border-bottom-color: #DDD;
+  }
+}
+
+/* ==========================================================================
+   Tab Container Bordered
+
+   Default Mendix Tab Container Widget rendered with borders
+========================================================================== */
+.tab-bordered.mx-tabcontainer .mx-tabcontainer-tabs {
+  margin: 0;
+}
+.tab-bordered.mx-tabcontainer .mx-tabcontainer-content {
+  padding: 10px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #DDD;
+  background-color: #FFF;
+}
+
+/* ==========================================================================
+   Tab Container Mobile
+
+   Default Mendix Tab Container Widget rendered for mobile use
+========================================================================== */
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs {
+  margin: 0 0 10px 0 !important;
+  border-color: transparent;
+  background-color: #0595db;
+  text-align: center;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li {
+  display: table-cell;
+  float: none;
+  margin: 0;
+  width: 1%;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li a {
+  padding: 15px 0;
+  border-style: none;
+  color: #FFF;
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li a:hover, .tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li a:focus {
+  color: #000;
+  border-style: none;
+  background-color: transparent;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a {
+  color: #000;
+  background-color: transparent;
+  position: relative;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:after, .tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-color: transparent;
+  content: " ";
+  pointer-events: none;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:after, .tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:before {
+  top: 100%;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:after {
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px;
+  border-top-color: #FFF;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:before {
+  left: 50%;
+  margin-left: -5px;
+  border-width: 6px 5px;
+  border-top-color: #FFF;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:after, .tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:before {
+  -webkit-transform: rotate(180deg);
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:after {
+  top: 80%;
+}
+.tab-mobile.mx-tabcontainer .mx-tabcontainer-tabs li.active a:before {
+  top: 75%;
+}
+
+/* ==========================================================================
+   Tables
+
+   Default Mendix Table Widget. Tables can be used to lend structure to a page. They contain a number of rows (tr) and columns, the intersection of which is called a cell (td). Each cell can contain widgets
+========================================================================== */
+th {
+  font-weight: bold;
+}
+
+table.mx-table > tbody {
+  /* Table row */
+}
+table.mx-table > tbody > tr {
+  /* Table header */
+  /* Table cells */
+}
+table.mx-table > tbody > tr > th {
+  padding: 8px 8px 8px 8px;
+}
+table.mx-table > tbody > tr > th * {
+  font-weight: bold;
+  color: #666;
+  font-weight: normal;
+}
+table.mx-table > tbody > tr > th > label {
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+table.mx-table > tbody > tr > td {
+  padding: 8px 8px 8px 8px;
+}
+table.mx-table > tbody > tr > td > div > label,
+table.mx-table > tbody > tr > td .mx-referenceselector-input-wrapper label {
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+/* Default Mendix Table Widget inside TemplateGrid */
+.mx-templategrid table.mx-table > tbody > tr > th,
+.mx-templategrid table.mx-table > tbody > tr > td {
+  padding: 8px 8px 8px 8px;
+}
+
+/* Default Mendix Table Widget inside Listview */
+.mx-list table.mx-table > tbody > tr > th,
+.mx-list table.mx-table > tbody > tr > td {
+  padding: 8px 8px 8px 8px;
+}
+
+/* ==========================================================================
+   Tables Lined
+	
+   Default Mendix Table Widget with borders top and bottom
+========================================================================== */
+table.table-lined.mx-table > tbody > tr > th,
+table.table-lined.mx-table > tbody > tr > td {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #DDD;
+}
+
+/* ==========================================================================
+   Tables Bordered
+	
+   Default Mendix Table Widget with borders
+========================================================================== */
+table.table-bordered.mx-table > tbody > tr > th,
+table.table-bordered.mx-table > tbody > tr > td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DDD;
+}
+
+/* ==========================================================================
+   Tables Compact
+	
+   Default Mendix Table Widget with less spacing in table cells
+========================================================================== */
+table.table-compact.mx-table > tbody > tr > th,
+table.table-compact.mx-table > tbody > tr > td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* ==========================================================================
+   Tables Sideless
+	
+   Default Mendix Table Widget inside TemplateGrid
+========================================================================== */
+table.table-sideless.mx-table > tbody > tr > td,
+table.table-sideless.mx-table > tbody > tr > th {
+  padding-right: 0;
+}
+table.table-sideless.mx-table > tbody > tr > th:first-child,
+table.table-sideless.mx-table > tbody > tr > td:first-child {
+  padding-left: 0;
+}
+
+/* ==========================================================================
+   Tables Spaceless
+	
+   Default Mendix Table Widget without padding
+========================================================================== */
+table.table-spaceless.mx-table > tbody > tr > th,
+table.table-spaceless.mx-table > tbody > tr > td {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Tables Vertical
+	
+   Default Mendix Table Widget vertical aligned 
+========================================================================== */
+table.table-vertical.mx-table > tbody > tr > th {
+  padding-bottom: 0;
+}
+table.table-vertical.mx-table > tbody > tr > th > label {
+  padding: 0;
+}
+table.table-vertical.mx-table > tbody > tr > th > div > label {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Tables Vertical Middle
+	
+   Default Mendix Table Widget vertical aligned middle
+========================================================================== */
+table.table-align-vertical-middle.mx-table > tbody > tr > th,
+table.table-align-vertical-middle.mx-table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Tables Compact
+	
+   Default Mendix Table Widget without padding and margin
+========================================================================== */
+table.table-label-compact.mx-table > tbody > tr > th > label,
+table.table-label-compact.mx-table > tbody > tr > td > label {
+  padding: 0;
+  margin: 0;
+}
+table.table-label-compact.mx-table > tbody > tr > th > div > label,
+table.table-label-compact.mx-table > tbody > tr > th .mx-referenceselector-input-wrapper label,
+table.table-label-compact.mx-table > tbody > tr > td > div > label,
+table.table-label-compact.mx-table > tbody > tr > td .mx-referenceselector-input-wrapper label {
+  padding: 0;
+  margin: 0;
+}
+
+html body .mx-page table.mx-table th.nopadding,
+html body .mx-page table.mx-table td.nopadding {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Tables Row Sizes
+========================================================================== */
+/*  Small rows
+	========================================================================== */
+table.table-row-s.mx-table > tbody > tr > th,
+table.table-row-s.mx-table > tbody > tr > td {
+  height: 55px;
+}
+
+/*  Medium rows
+	========================================================================== */
+table.table-row-m.mx-table > tbody > tr > th,
+table.table-row-m.mx-table > tbody > tr > td {
+  height: 70px;
+}
+
+/*  Large rows
+	========================================================================== */
+table.table-row-l.mx-table > tbody > tr > th,
+table.table-row-l.mx-table > tbody > tr > td {
+  height: 120px;
+}
+
+/*	Table Fixed
+   ========================================================================== */
+table.table-fixed {
+  table-layout: fixed;
+}
+
+/* ==========================================================================
+   Templategrid
+
+   Default Mendix Templategrid Widget. The template grid shows a list of objects in a tile view. For example, a template grid can show a list of products. The template grid has a lot in common with the data grid. The main difference is that the objects are shown in templates (a sort of small data view) instead of rows
+========================================================================== */
+.mx-templategrid .mx-templategrid-content-wrapper {
+  table-layout: fixed;
+}
+.mx-templategrid .mx-templategrid-item {
+  background-color: #FFF;
+  padding: 8px 8px 8px 8px;
+  cursor: default;
+}
+.mx-templategrid .mx-templategrid-item:hover {
+  background-color: transparent;
+}
+.mx-templategrid .mx-templategrid-item.selected {
+  background-color: #0595db !important;
+}
+.mx-templategrid .mx-layoutgrid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   Templategrid Hover
+
+   Default Mendix Templategrid Widget Hover
+========================================================================== */
+.templategrid-hover.mx-templategrid .mx-templategrid-item:hover {
+  background-color: #c7e3f1 !important;
+}
+.templategrid-hover.mx-templategrid .mx-templategrid-item.selected {
+  background-color: #0595db !important;
+}
+.templategrid-hover.mx-templategrid .mx-templategrid-item.selected:hover {
+  background-color: #c7e3f1 !important;
+}
+
+/* ==========================================================================
+   Templategrid Selectable
+
+   Default Mendix Templategrid Widget with selection enabled
+========================================================================== */
+.templategrid-selectable.mx-templategrid .mx-templategrid-item {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Templategrid Lined
+
+   Default Mendix Templategrid Widget with borders between items
+========================================================================== */
+.templategrid-lined.mx-templategrid .mx-grid-content {
+  border-top-style: solid;
+  border-top-color: #DDD;
+  border-top-width: 2px;
+}
+.templategrid-lined.mx-templategrid .mx-templategrid-item {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+/* ==========================================================================
+   Templategrid Striped
+
+  Default Mendix Templategrid Widget with background between items
+========================================================================== */
+.templategrid-striped.mx-templategrid .mx-templategrid-row:nth-child(odd) .mx-templategrid-item {
+  background-color: #f9f9f9;
+}
+
+/* ==========================================================================
+   Templategrid Stylingless
+
+  Default Mendix Templategrid Widget without styling
+========================================================================== */
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item:hover {
+  background-color: transparent;
+}
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item.selected {
+  background-color: transparent !important;
+}
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item.selected:hover {
+  background-color: transparent !important;
+}
+
+/* ==========================================================================
+   Templategrid Transparent
+
+  Default Mendix Templategrid Widget without background and padding in items
+========================================================================== */
+.templategrid-transparent.mx-templategrid .mx-templategrid-item {
+  background-color: transparent;
+  border: 0;
+}
+
+/* ==========================================================================
+   Typography
+========================================================================== */
+p {
+  line-height: 1.42857;
+}
+
+label {
+  padding-top: 0;
+}
+
+.mx-title {
+  font-weight: normal;
+  color: #555;
+  font-size: 31px;
+}
+
+h1, .h1, .h1 > * {
+  font-size: 31px;
+}
+
+h2, .h2, .h2 > * {
+  font-size: 26px;
+}
+
+h3, .h3, .h3 > * {
+  font-size: 20px;
+}
+
+h4, .h4, .h4 > * {
+  font-size: 16px;
+}
+
+h5, .h5, .h5 > * {
+  font-size: 14px;
+}
+
+h6, .h6, .h6 > * {
+  font-size: 11px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* Text Weights */
+.text-light, .text-light > *, .text-light label {
+  font-weight: 100;
+}
+
+.text-normal, .text-normal > *, .text-normal label {
+  font-weight: normal;
+}
+
+.text-semibold, .text-semibold > *, .text-semibold label {
+  font-weight: 500;
+}
+
+.text-bold, .text-bold > *, .text-bold label {
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Text Utility Classes
+========================================================================== */
+.text-spacing {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.text-lined {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+/* Text Break */
+.text-break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+/* ==========================================================================
+   Typography
+
+   Text Colors
+========================================================================== */
+.text-gray-darker {
+  color: #222;
+}
+
+.text-gray-dark {
+  color: #333;
+}
+
+.text-gray {
+  color: #555;
+}
+
+.text-gray-light {
+  color: #999;
+}
+
+.text-gray-primary {
+  color: #DDD;
+}
+
+.text-gray-lighter {
+  color: #eee;
+}
+
+.text-default, .text-default:hover {
+  color: #000;
+}
+
+.text-primary, .text-primary:hover {
+  color: #0595db;
+}
+
+.text-info, .text-info:hover {
+  color: #48B0F7;
+}
+
+.text-success, .text-success:hover {
+  color: #76ca02;
+}
+
+.text-warning, .text-warning:hover {
+  color: #f99b1d;
+}
+
+.text-danger, .text-danger:hover {
+  color: #ed1c24;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-black-secondary {
+  color: #666666;
+}
+
+.text-black-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.text-black-hint {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.text-white {
+  color: #FFF;
+}
+
+.text-white-secondary {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-white-disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.text-white-hint {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Dashboard
+========================================================================== */
+.page-dashboard {
+  background-color: #EFF4F7;
+}
+.page-dashboard .chartjs-node {
+  margin-top: 30px;
+}
+
+.page-dashboard-default .card {
+  min-height: 345px;
+}
+
+.page-dashboard-mytasks .card {
+  min-height: 320px;
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Form
+========================================================================== */
+.page-form {
+  /* Styles here */
+}
+
+.page-form-default {
+  /* Styles here */
+}
+
+.page-form-imagemap {
+  /* Styles here */
+}
+
+.page-form-tabs {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Login
+========================================================================== */
+.page-login-users .profilecard:hover, .page-login-users .profilecard:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+.page-login-users .mx-navigationlist .mx-navigationlist-item {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Master Detail
+========================================================================== */
+.page-masterdetail {
+  /* Styles here */
+}
+
+.page-masterdetail-basic {
+  /* Styles here */
+}
+
+.page-masterdetail-big {
+  /* Styles here */
+}
+
+.page-masterdetail-imagemap {
+  /* Styles here */
+}
+
+.page-masterdetail-multilevel {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tabs
+========================================================================== */
+.page-tabs {
+  /* Styles here */
+}
+.page-tabs .tabsfullwidth {
+  background-color: #EFF4F7;
+}
+
+.page-tabs-default {
+  /* Styles here */
+}
+
+.page-tabs-fullwidth {
+  /* Styles here */
+}
+.page-tabs-fullwidth .pageheader.pageheader-fullwidth {
+  border-style: none;
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Website
+========================================================================== */
+.page-website {
+  /* Styles here */
+}
+
+.page-website-actions {
+  /* Styles here */
+}
+
+.page-website-items {
+  /* Styles here */
+}
+
+.page-website-items-detail {
+  /* Styles here */
+}
+
+.page-website-presentation {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Wizard
+========================================================================== */
+.page-wizard {
+  /* Styles here */
+}
+
+.page-wizard-default {
+  /* Styles here */
+}
+
+.page-wizard-titlecentered {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone
+========================================================================== */
+.phone-page-dashboard {
+  background-color: #EFF4F7;
+}
+
+.phone-page-dashboard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Form
+========================================================================== */
+.phone-page-form {
+  /* Styles here */
+}
+
+.phone-page-form-default {
+  /* Styles here */
+}
+
+.phone-page-form-edit {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Listview
+========================================================================== */
+.phone-page-listview {
+  /* Styles here */
+}
+
+.phone-page-listview-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Wizard
+========================================================================== */
+.phone-page-wizard {
+  /* Styles here */
+}
+
+.phone-page-wizard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Dashboard
+========================================================================== */
+.tablet-page-dashboard {
+  background-color: #EFF4F7;
+}
+
+.tablet-page-dashboard-default {
+  /* Styles here */
+}
+
+.tablet-page-dashboard-big {
+  /* Styles here */
+}
+
+.tablet-page-dashboard-mytasks {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Form
+========================================================================== */
+.tablet-page-form {
+  /* Styles here */
+}
+
+.tablet-page-form-default {
+  /* Styles here */
+}
+
+.tablet-page-form-edit {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Master Detail
+========================================================================== */
+.tablet-page-masterdetail {
+  /* Styles here */
+}
+
+.tablet-page-masterdetail-default {
+  /* Styles here */
+}
+
+.tablet-page-masterdetail-leftright {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Wizard
+========================================================================== */
+.tablet-page-wizard {
+  /* Styles here */
+}
+
+.tablet-page-wizard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Action Block
+========================================================================== */
+.actionblock {
+  font-weight: bold;
+  padding: 20px 0;
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+.actionblock span {
+  display: block;
+  margin: auto auto 20px auto;
+  font-size: 72px;
+}
+.actionblock img {
+  height: 72px;
+  display: block;
+  margin: auto auto 20px auto;
+}
+
+/* ==========================================================================
+   Card
+========================================================================== */
+.card {
+  padding: 20px;
+  margin: 0 0 30px 0;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 1024px) {
+  .card {
+    padding: 10px;
+  }
+}
+
+.card-maps {
+  padding: 0;
+}
+
+/* Title + button + border below title and button */
+.card-header-action {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.card-header-action .card-title {
+  float: left;
+}
+.card-header-action .btn {
+  float: right;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-title {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.card-annotation {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  border-radius: 50%;
+  margin: 30px auto;
+  width: 125px;
+  height: 125px;
+}
+@media (max-width: 992px) {
+  .card-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+.card-icon .glyphicon {
+  font-size: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .card-icon .glyphicon {
+    font-size: 28px;
+  }
+}
+
+.card-image {
+  margin: 30px auto;
+}
+
+.card-user-image {
+  border: 4px solid #FFF;
+}
+
+.card-link {
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   Dashboard Card
+========================================================================== */
+.dashboardcard {
+  padding: 20px;
+  margin: 0 0 40px 0;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+
+.dashboardcard-title {
+  margin-top: 0;
+}
+
+.dashboardcard-subtitle {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.dashboardcard-link {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 960px) {
+  .dashboardcard {
+    padding: 10px;
+    margin: 0 0 20px 0;
+  }
+}
+/* ==========================================================================
+   Dashboard Stats
+
+   Used in dashboard
+========================================================================== */
+.dashboardstat {
+  margin: 30px 0;
+}
+@media (max-width: 992px) {
+  .dashboardstat {
+    margin: 10px 0;
+  }
+}
+.dashboardstat .dashboardstat-left,
+.dashboardstat .dashboardstat-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.dashboardstat-icon {
+  font-size: 30px;
+  padding: 8px 14px;
+  margin: 5px 10px 0 0;
+}
+@media (max-width: 992px) {
+  .dashboardstat-icon {
+    font-size: 20px;
+  }
+}
+
+.dashboardstat-title {
+  font-size: 18px;
+  color: #999;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .dashboardstat-title {
+    font-size: 13px;
+  }
+}
+
+.dashboardstat-number {
+  font-size: 72px;
+  line-height: 1em;
+  color: #000;
+}
+@media (max-width: 992px) {
+  .dashboardstat-number {
+    font-size: 30px;
+  }
+}
+
+/* ==========================================================================
+   Form
+
+   To extend the default Bootstrap form
+========================================================================== */
+.form-footer {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* ==========================================================================
+   Form Block
+
+   Used in default forms
+========================================================================== */
+.formblock {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.formblock-header {
+  color: #0595db;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   Master Detail Listview
+========================================================================== */
+.masterdetail-listview {
+  background-color: #EFF4F7;
+}
+.masterdetail-listview .mx-listview {
+  height: 100%;
+  margin: 0;
+}
+.masterdetail-listview .mx-listview .mx-listview-item {
+  background-color: transparent;
+}
+.masterdetail-listview .mx-listview .mx-listview-item.selected {
+  color: #FFF;
+}
+.masterdetail-listview .mx-listview .mx-listview-item.selected .mx-link {
+  color: #FFF;
+}
+.masterdetail-listview .mx-listview .mx-listview-item.selected:hover, .masterdetail-listview .mx-listview .mx-listview-item.selected:active {
+  background-color: #0595db !important;
+}
+
+/* ==========================================================================
+   Multilevel
+========================================================================== */
+.multilevel-tabs .mx-tabcontainer-tabs {
+  margin-bottom: 10px;
+}
+
+.multilevel-list .mx-listview-list {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.multilevel-list .mx-listview-list .mx-listview-item {
+  padding: 10px;
+  border-color: #eee;
+  border-left: 4px solid #eee;
+  border-right: none;
+  border-radius: 0;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.multilevel-list .mx-listview-list .mx-listview-item:first-child {
+  border-radius: 0;
+}
+.multilevel-list .mx-listview-list .mx-listview-item:last-child {
+  border-radius: 0;
+}
+.multilevel-list .mx-listview-list .mx-listview-item.selected {
+  border-left: 4px solid #0595db;
+  background-color: #eee !important;
+}
+
+.multilevel-title label {
+  font-weight: bold;
+}
+
+.multilevel-subtitle {
+  color: #555;
+}
+
+.multilevel-message-header {
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.multilevel-message-header-title {
+  font-size: 26px;
+}
+
+.multilevel-message-header-subtitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.multilevel-message-text {
+  margin: 10px 0;
+}
+
+.multilevel-grid .mx-datagrid-head-table th {
+  border-style: none;
+}
+.multilevel-grid .mx-datagrid-body-table {
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  border-color: #eee;
+  border-left: 4px solid #eee;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr.selected td, .multilevel-grid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td {
+  border-left: 4px solid #0595db;
+  background-color: #eee !important;
+}
+
+/* ==========================================================================
+   Page Header
+========================================================================== */
+.pageheader {
+  border-bottom: 2px solid #DDD;
+}
+@media (max-width: 767px) {
+  .pageheader {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .pageheader {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .pageheader {
+    margin-bottom: 35px;
+  }
+}
+
+.pageheader.pageheader-fullwidth {
+  background-color: #EFF4F7;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 0;
+}
+
+.profile-tablet .pageheader.pageheader-fullwidth {
+  border-style: none;
+}
+
+.pageheader-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pageheader-subtitle {
+  color: #666666;
+}
+
+/* ==========================================================================
+   Section Header
+========================================================================== */
+.sectionheader {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+}
+
+.sectionheader-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sectionheader-subtitle {
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.sectionheader-avatar {
+  padding: 4px;
+  border: 2px solid #DDD;
+  background-color: #FFF;
+}
+
+/* ==========================================================================
+   Profile Card
+========================================================================== */
+.profilecard {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.profilecard .profilecard-contentwrapper {
+  width: auto;
+}
+.profilecard .profilecard-imgwrapper {
+  width: 150px;
+}
+.profilecard .profilecard-actionwrapper {
+  width: auto;
+  text-align: right;
+}
+.profilecard .profilecard-contentwrapper,
+.profilecard .profilecard-imgwrapper,
+.profilecard .profilecard-actionwrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.profilecard-btn {
+  display: inline-block;
+  width: 150px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.profilecard-img {
+  border-radius: 50%;
+  margin-right: 40px;
+  padding: 4px;
+  border: 2px solid #DDD;
+  background-color: #FFF;
+}
+
+.profilecard-title {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.profilecard-subtitle {
+  color: #666666;
+}
+
+.pageheader .profilecard {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Profile Header
+========================================================================== */
+.profileheader {
+  margin: 20px 0;
+}
+.profileheader .profileheader-content {
+  padding: 0 10px;
+}
+.profileheader .profileheader-image {
+  display: block;
+  margin: auto auto 10px auto;
+}
+
+/* ==========================================================================
+   Products
+
+   Used in Website page templates
+========================================================================== */
+.product-header {
+  padding: 25px 0;
+  border-bottom: 1px solid #DDD;
+}
+
+.product-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.product-subtitle {
+  color: #666666;
+}
+
+.product-btn {
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   Sidebar Header
+========================================================================== */
+.sidebarheader {
+  padding: 10px 20px;
+}
+
+.sidebarheader-img {
+  margin-bottom: 10px;
+}
+
+.sidebarheader-title {
+  color: #FFF;
+}
+
+.sidebarheader-subtitle {
+  color: #666666;
+}
+
+/* ==========================================================================
+   Tabs full width
+========================================================================== */
+.tabsfullwidth {
+  background-color: #EFF4F7;
+}
+.tabsfullwidth > .mx-tabcontainer-tabs {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .tabsfullwidth > .mx-tabcontainer-tabs {
+    padding: 0 40px;
+  }
+}
+.tabsfullwidth > .mx-tabcontainer-content {
+  background-color: #FFF;
+}
+
+/* ==========================================================================
+   Wizard
+
+   Styling for Wizard (Steps/Numbers)
+========================================================================== */
+.wizard {
+  position: relative;
+  margin: auto;
+}
+.wizard .row:before {
+  left: 0;
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.wizard .row {
+  position: relative;
+  width: 100%;
+  display: table;
+  margin: auto;
+}
+
+.wizard-step {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.wizard-step-number {
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 72px;
+  height: 72px;
+  color: #DDD;
+  border: 2px solid #DDD;
+  background-color: #FFF;
+  line-height: 3.5em;
+  padding: 0;
+}
+
+.wizard-step-number-active {
+  color: #FFF;
+  border-color: #0595db;
+  background-color: #0595db;
+}
+
+.wizard-step-number-visited {
+  color: #0595db;
+  border-color: #0595db;
+  background-color: #FFF;
+}
+
+.wizard-step-title {
+  display: block;
+  margin-top: 10px;
+}
+
+.profile-phone .wizard .row:before {
+  top: 20px;
+}
+.profile-phone .wizard .wizard-step-number {
+  width: 40px;
+  height: 40px;
+  line-height: 2em;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Wizard Progress
+
+   Styling for Wizard (Progress Steps)
+========================================================================== */
+.wizard-progress {
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  background-color: #eee;
+  position: relative;
+}
+.wizard-progress [class*=col-]:first-child .wizard-progress-step {
+  margin-left: 0;
+}
+
+.wizard-steps-container {
+  border-bottom: 1px solid #DDD;
+}
+
+.wizard-progress-step {
+  margin: 0 0 0 -30px;
+  padding: 14px 20px 14px 30px;
+  position: relative;
+  background: #eee;
+}
+.wizard-progress-step:after, .wizard-progress-step:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-color: transparent;
+  content: " ";
+  pointer-events: none;
+  left: 100%;
+  z-index: 10;
+}
+.wizard-progress-step:before {
+  top: 50%;
+  margin-top: -25px;
+  border-width: 25px 15px;
+  border-left-color: #DDD;
+}
+.wizard-progress-step:after {
+  top: 50%;
+  margin-top: -24px;
+  border-width: 24px 14px;
+  border-left-color: #eee;
+}
+
+.wizard-progress-step-active {
+  background-color: #cdeaf8;
+}
+.wizard-progress-step-active:after {
+  border-left-color: #cdeaf8;
+}
+.wizard-progress-step-active .wizard-progress-number {
+  background-color: #0595db;
+}
+
+.wizard-progress-step-visited {
+  background-color: #cdeaf8;
+}
+.wizard-progress-step-visited:after {
+  border-left-color: #cdeaf8;
+}
+.wizard-progress-step-visited .wizard-progress-number {
+  background-color: #76ca02;
+}
+.wizard-progress-step-visited .wizard-progress-title {
+  color: #76ca02;
+}
+
+.wizard-progress-number {
+  display: inline-block;
+  padding: 1px 7px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #999;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.wizard-progress-title {
+  color: #0595db;
+}
+
+.wizard-step-content {
+  padding: 10px 20px;
+}
+
+/* ==========================================================================
+   Templategrid Profile Card
+
+   Profile card styled for templategrid
+========================================================================== */
+.templategrid-profilecard {
+  padding: 20px;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+.templategrid-profilecard .templategrid-profilecard-contentwrapper {
+  width: auto;
+}
+.templategrid-profilecard .templategrid-profilecard-imgwrapper {
+  width: 150px;
+}
+.templategrid-profilecard .templategrid-profilecard-contentwrapper,
+.templategrid-profilecard .templategrid-profilecard-imgwrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.templategrid-profilecard .templategrid-profilecard-btn {
+  display: block;
+  margin-top: 10px;
+}
+.templategrid-profilecard .templategrid-profilecard-img {
+  border-radius: 50%;
+  margin-right: 40px;
+  padding: 4px;
+  border: 2px solid #DDD;
+  background-color: #FFF;
+}
+.templategrid-profilecard .templategrid-profilecard-title {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.templategrid-profilecard .templategrid-profilecard-subtitle {
+  color: #666666;
+}
+
+/* ==========================================================================
+   Layout
+
+   Default Mendix Layout
+========================================================================== */
+.profile-phone .region-topbar {
+  min-height: 44px;
+  background-color: #0595db;
+  border: 0;
+}
+
+/*
+* Mendix Documentation
+* Special styles for presenting mobile components
+*/
+/*
+* Listview
+*
+* Default Mendix Listview 
+*/
+.profile-phone,
+.profile-tablet {
+  /* Listview Load More button */
+}
+.profile-phone .mx-listview .mx-listview-searchbar,
+.profile-tablet .mx-listview .mx-listview-searchbar {
+  padding: 10px;
+  margin-bottom: 0;
+  position: relative;
+  /* Reset Search Button */
+  /* Search Field */
+}
+.profile-phone .mx-listview .mx-listview-searchbar button,
+.profile-tablet .mx-listview .mx-listview-searchbar button {
+  position: absolute;
+  right: 10px;
+  background: none;
+}
+.profile-phone .mx-listview .mx-listview-searchbar .mx-listview-search-input input,
+.profile-tablet .mx-listview .mx-listview-searchbar .mx-listview-search-input input {
+  box-shadow: none;
+  border-style: none;
+  background-color: #eee;
+  text-align: center;
+}
+.profile-phone .mx-listview .mx-list .mx-listview-item:first-child,
+.profile-tablet .mx-listview .mx-list .mx-listview-item:first-child {
+  border-radius: 0;
+}
+.profile-phone .mx-listview .mx-list .mx-listview-item:last-child,
+.profile-tablet .mx-listview .mx-list .mx-listview-item:last-child {
+  border-radius: 0;
+}
+.profile-phone label,
+.profile-tablet label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-phone .mx-listview-loadMore,
+.profile-tablet .mx-listview-loadMore {
+  margin: 20px auto;
+  width: 95%;
+  display: block;
+}
+
+/*
+* Mendix Documentation
+* Special styles for presenting mobile components
+*/
+/*
+* Loader
+*
+* Default Mendix Loader
+*/
+.profile-phone .mx-progress {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  top: 0;
+}
+.profile-phone .mx-progress .modal-content {
+  border-radius: 0;
+  box-shadow: none;
+  height: 100%;
+  border-style: none;
+  background: none;
+}
+.profile-phone .mx-progress .modal-header {
+  display: none;
+}
+.profile-phone .mx-progress .mx-dialog-body {
+  height: 100% !important;
+  width: 100%;
+}
+.profile-phone .mx-progress .mx-progress-list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.profile-phone .mx-progress .mx-progress-item {
+  border-radius: 12px;
+  position: relative;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: loader10m 1.5s ease-in-out infinite;
+  animation: loader10m 1.5s ease-in-out infinite;
+  text-indent: -9999px;
+  background: none;
+}
+.profile-phone .mx-progress .mx-progress-item:before {
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  height: 12px;
+  width: 12px;
+  -webkit-animation: loader10g 1.5s ease-in-out infinite;
+  animation: loader10g 1.5s ease-in-out infinite;
+}
+.profile-phone .mx-progress .mx-progress-item:after {
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  height: 12px;
+  width: 12px;
+  -webkit-animation: loader10d 1.5s ease-in-out infinite;
+  animation: loader10d 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes loader10g {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes loader10g {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes loader10m {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes loader10m {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@-webkit-keyframes loader10d {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes loader10d {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+/*
+* Mendix Documentation
+* Special styles for presenting mobile components
+*/
+/*
+* Header
+*
+* Default Mendix Header for Mobile 
+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .mx-header .mx-header-right {
+    right: 63px !important;
+  }
+}
+body .mx-header {
+  padding: 0;
+  height: 44px;
+  color: #FFF;
+  border-bottom: 1px solid #DDD;
+  background-color: #0595db;
+  display: table;
+  width: 100%;
+}
+body .mx-header .mx-header-center {
+  display: table-cell;
+  width: 100%;
+  text-align: center;
+}
+body .mx-header .mx-header-left,
+body .mx-header .mx-header-right {
+  display: table;
+  width: 25%;
+  top: 0;
+  position: absolute;
+  padding: 0 8px;
+  height: 44px;
+}
+body .mx-header .mx-header-left .mx-placeholder,
+body .mx-header .mx-header-right .mx-placeholder {
+  display: table-cell;
+  vertical-align: middle;
+}
+body .mx-header .mx-link {
+  color: #FFF;
+}
+body .mx-header .mx-sidebartoggle {
+  font-size: 24px;
+  margin-top: 4px;
+}
+body .mx-header .mx-title {
+  margin: 0;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .mx-header .btn-image.glyphicon {
+  font-size: 21px;
+}
+
+body[dir="ltr"] .mx-header-left,
+body[dir="rtl"] .mx-header-right {
+  left: 0;
+  text-align: left;
+}
+
+body[dir="rtl"] .mx-header-left,
+body[dir="ltr"] .mx-header-right {
+  right: 0;
+  text-align: right;
+}
+
+/* ==========================================================================
+   Tabcontainer
+
+   Default Mendix Tabcontainer for Mobile 
+========================================================================== */
+.profile-phone .mx-tabcontainer .mx-tabcontainer-tabs {
+  margin: 10px;
+}
+
+.profile-phone .mx-tabcontainer .mx-listview .mx-listview-searchbar,
+.profile-tablet .mx-tabcontainer .mx-listview .mx-listview-searchbar {
+  padding-top: 0;
+}
+.profile-phone .tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li,
+.profile-tablet .tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li {
+  display: table-cell;
+  float: none;
+  margin: 0;
+  width: 1%;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Regions
+
+   Used for navigation layouts
+========================================================================== */
+.region-topbar {
+  min-height: 60px;
+  border-bottom: 1px solid #0587c7;
+  background-color: #0595db;
+}
+.region-topbar > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+.region-topbar .toggle-btn {
+  font-size: 16px;
+  float: left;
+  margin: -20px 15px 0 0;
+  transform: translateY(30px);
+}
+.region-topbar .navbar-header {
+  width: 100%;
+}
+.region-topbar .navbar-right {
+  min-height: 60px;
+  max-width: 100%;
+}
+.region-topbar .navbar-right .mx-appswitcher-button-placeholder,
+.region-topbar .navbar-right .mx-profilemenu-button-placeholder {
+  display: inline-block;
+  border-left: 1px solid #DDD;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  float: left;
+  max-width: 50%;
+}
+.region-topbar .navbar-right .mx-appswitcher-button-placeholder iframe,
+.region-topbar .navbar-right .mx-profilemenu-button-placeholder iframe {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+}
+@media (max-width: 768px) {
+  .region-topbar .navbar-right {
+    display: none;
+  }
+}
+
+.region-sidebar, .layout-sidebar-responsive .region-sidebar-fixed,
+.region-sidebar-fixed {
+  background-color: #4D4d4d;
+}
+.region-sidebar > .mx-layoutcontainer-wrapper, .layout-sidebar-responsive .region-sidebar-fixed > .mx-layoutcontainer-wrapper,
+.region-sidebar-fixed > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+.region-content {
+  padding: 0;
+}
+.region-content > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+.region-content > .mx-placeholder .mx-layoutgrid-fixed,
+.region-content > .mx-layoutcontainer-wrapper .mx-placeholder .mx-layoutgrid-fixed {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.region-footer > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+.layout-sidebar-responsive .region-sidebar-fixed {
+  display: none;
+}
+@media (min-width: 768px) {
+  .layout-sidebar-responsive .region-sidebar-fixed {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .layout-sidebar-responsive .mx-scrollcontainer-open {
+    left: -200px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  body[dir="rtl"] .layout-sidebar-responsive .region-sidebar-fixed {
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  body[dir="ltr"] .layout-sidebar-responsive .region-sidebar-fixed {
+    left: 0;
+  }
+}
+
+/* ==========================================================================
+   Navbar Brand
+
+   For your company, product, or project name
+========================================================================== */
+.navbar-brand {
+  display: block;
+  min-height: 60px;
+  float: left;
+  padding: 0;
+  line-height: 60px;
+}
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-brand a {
+  font-size: 20px;
+  color: #FFF;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Region Content
+
+   Specific content styling
+========================================================================== */
+/* ==========================================================================
+   Region Sidebar
+
+   Specific sidebar styling
+========================================================================== */
+.region-sidebar, .layout-sidebar-responsive .region-sidebar-fixed {
+  background-color: #4D4d4d;
+}
+.region-sidebar > .mx-layoutcontainer-wrapper, .layout-sidebar-responsive .region-sidebar-fixed > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Region Topbar
+
+   Specific topbar styling
+========================================================================== */
+.navlayout-topbar .region-topbar {
+  /* Reset Layout Grid spacing */
+}
+.navlayout-topbar .region-topbar .container-fluid {
+  padding: 0 20px;
+}
+.navlayout-topbar .region-topbar .mx-navbar {
+  float: left;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .navlayout-topbar .region-topbar .mx-navbar {
+    float: none;
+    clear: both;
+  }
+}
+.navlayout-topbar .region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a {
+  padding: 0 30px;
+  line-height: 60px;
+}

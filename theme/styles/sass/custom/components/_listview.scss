@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Listview
+
+   Default Mendix Listview Widget. The list view shows a list of objects arranged vertically. Each object is shown using a template
+========================================================================== */
+.mx-listview {
+	/* Styles here */
+	// Clear search button (overrides load more button stying)
+	.mx-button.mx-listview-clear-button {
+		/* Styles here */
+	}
+	> .mx-button {
+		/* Load more button */
+	}
+	.mx-listview-list {
+		
+	}
+	.mx-listview-item {
+		/* Styles here */
+		&:hover {
+			/* Styles here */
+		}
+		&.selected {
+			/* Styles here */
+			&:hover {
+				/* Styles here */
+			}
+		}
+		&:nth-child(2n+1) {
+			/* Styles here */
+		}
+	}
+}
+
+
+// ==========================================================================
+// Listview Hover
+//   
+// Default Mendix Listview Widget with hover
+// ==========================================================================
+.listview-hover.mx-listview {
+	.mx-listview-item {
+		&:hover,
+		&:active {
+			
+		}
+	}
+}
+
+
+// ==========================================================================
+// Listview Lined
+//
+// Default Mendix Listview Widget with only border bottom in listview item
+// ==========================================================================
+.listview-lined.mx-listview {
+	.mx-listview-item {
+		&:first-child {
+			
+		}
+		&:last-child {
+	
+		}
+	}
+}
+
+
+// ==========================================================================
+// Listview Striped
+//
+// Default Mendix Listview Widget with striped listview items
+// ==========================================================================
+.listview-striped.mx-listview {
+	.mx-listview-item:nth-child(2n+1) {
+		
+	}
+}
+
+
+// ==========================================================================
+// Listview Seperated
+//
+// Default Mendix Listview Widget with listview items seperated
+// ==========================================================================
+.listview-seperated.mx-listview {
+	.mx-listview-item {
+
+	}
+}
+
+
+// ==========================================================================
+// Listview Stylingless
+//
+// Default Mendix Listview Widget with listview items seperated
+// ==========================================================================
+.listview-stylingless.mx-listview {
+	.mx-listview-item {
+		
+		&:hover {
+			
+		}
+		&.selected {
+
+			&:hover {
+				
+			}
+		}
+	}
+}	
+	

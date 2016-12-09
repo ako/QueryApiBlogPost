@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Datagrid Default
+
+   Default Mendix Datagrid Widget. The datagrid shows a list of objects in a grid
+========================================================================== */
+.mx-datagrid {
+	/* Styles here */
+	.mx-datagrid-head-table {
+		/* Styles here */
+		th {
+			/* Styles here */
+		}
+		.mx-datagrid-head-wrapper {
+			/* Styles here */
+			.mx-datagrid-head-caption {
+				font-size: 11px;
+			}
+		}
+	}
+	.mx-datagrid-body-table {
+		/* Styles here */
+		.mx-datagrid-body tr {
+			/* Styles here */
+			td {
+				/* Styles here */
+				&:focus {
+
+				}
+			}
+			&:hover td {
+			
+			}
+			&.selected td,
+			&.selected:hover td {
+
+			}
+		}
+		
+		// Table footer
+		.mx-datagrid-foot {
+
+			> tr > th {
+
+			}
+
+			> tr > td {
+
+			}
+		}
+
+		& *:focus {
+			
+		}
+	}
+}
+
+// ==========================================================================
+//   Datagrid Striped
+//
+//   Default Mendix Datagrid Widget with striped rows
+// ==========================================================================
+.datagrid-striped.mx-datagrid {
+	.mx-datagrid-head-table {
+		th {  
+
+		}
+		.mx-datagrid-head-wrapper {
+			
+		}
+	}
+	.mx-datagrid-body-table {
+		.mx-datagrid-body tr {
+			td {
+				
+			}
+			&:nth-child(odd) td {
+				
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// Datagrid Bordered
+
+// Default Mendix Datagrid Widget with borders
+// ==========================================================================
+.datagrid-bordered.mx-datagrid {
+	.mx-datagrid-head-table {
+		th { 
+
+		}
+		.mx-datagrid-head-wrapper {
+
+		}
+	}
+	.mx-datagrid-body-table {
+		.mx-datagrid-body tr {
+			td {
+				
+			}
+		}
+	}
+	.mx-datagrid-foot {
+		> tr > th {
+
+		}
+		> tr > td {
+			
+		}
+	}
+}
+
+
+// ==========================================================================
+// Datagrid Hover
+//
+//   Default Mendix Datagrid Widget with hover
+// ==========================================================================
+.datagrid-hover.mx-datagrid { 
+	.mx-datagrid-body-table {
+		.mx-datagrid-body tr {
+			&:hover td {
+				
+			}
+			&.selected:hover td {
+				
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// Datagrid Large
+//
+// Default Mendix Datagrid Widget with large rows
+// ==========================================================================
+.datagrid-large.mx-datagrid {
+	.mx-datagrid-head-table {
+		.mx-datagrid-head-wrapper {
+			
+		}
+	}
+	.mx-datagrid-body-table {
+		.mx-datagrid-body tr {
+			td {
+				
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// Datagrid Transparent
+//
+// Default Mendix Datagrid Widget with transparent background for row and cells
+// ==========================================================================
+.datagrid-transparent.mx-datagrid {
+	.mx-datagrid-body-table {
+		.mx-datagrid-body tr {
+			&:nth-of-type(odd) {
+			
+			}
+			td {
+			
+			}
+		}
+	}
+}
+
+
+// ==========================================================================
+// Datagrid Full Search
+//
+// Default Mendix Datagrid Widget with adjusted search field. Only 1 search field is allowed
+// ==========================================================================
+.datagrid-fullsearch.mx-datagrid {
+	.mx-grid-search-button {
+		
+	}
+	.mx-grid-reset-button {
+		
+	}
+	.mx-grid-search-item {
+		
+	}
+	.mx-grid-search-label {
+		
+	}
+	.mx-grid-searchbar .mx-grid-search-input {
+		.form-control {
+
+		}
+	}
+}

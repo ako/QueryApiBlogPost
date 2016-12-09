@@ -1,0 +1,1178 @@
+/* ==========================================================================
+   Base
+
+   Default settings
+========================================================================== */
+body {
+  /* Styles here */
+}
+
+a {
+  /* Styles here */
+}
+
+a:hover {
+  /* Styles here */
+}
+
+a:focus {
+  /* Styles here */
+}
+
+a:active,
+a:hover {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+.btn,
+.mx-button {
+  /* Styles here */
+}
+.btn:hover, .btn:focus, .btn:active,
+.mx-button:hover,
+.mx-button:focus,
+.mx-button:active {
+  /* Styles here */
+}
+
+.mx-link {
+  /* Styles here */
+}
+
+.btn-default {
+  /* Styles here */
+}
+
+.btn-primary {
+  /* Styles here */
+}
+
+.btn-inverse {
+  /* Styles here */
+}
+
+.btn-success {
+  /* Styles here */
+}
+
+.btn-info {
+  /* Styles here */
+}
+
+.btn-warning {
+  /* Styles here */
+}
+
+.btn-danger {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Datagrid Default
+
+   Default Mendix Datagrid Widget. The datagrid shows a list of objects in a grid
+========================================================================== */
+.mx-datagrid {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-head-table {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-head-table th {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper .mx-datagrid-head-caption {
+  font-size: 11px;
+}
+.mx-datagrid .mx-datagrid-body-table {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr {
+  /* Styles here */
+}
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Dataview
+
+   Default Mendix Dataview Widget. The data view is used for showing the contents of exactly one object
+========================================================================== */
+.mx-dataview {
+  /* Styles here */
+}
+.mx-dataview .mx-dataview-controls {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Grid
+
+   Default Mendix Grid
+========================================================================== */
+.mx-grid {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button:hover {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-grid-paging-status {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-item {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input .form-control {
+  /* Styles here */
+}
+.mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input .mx-button {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Groupbox
+
+   Default Mendix Groupboxes
+========================================================================== */
+.mx-groupbox {
+  /* Styles here */
+}
+.mx-groupbox > .mx-groupbox-header {
+  /* Styles here */
+}
+.mx-groupbox > .mx-groupbox-body {
+  /* Styles here */
+}
+.mx-groupbox .mx-groupbox-header + .mx-groupbox-body {
+  /* Styles here */
+}
+.mx-groupbox.collapsed > .mx-groupbox-header {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Inputs
+========================================================================== */
+.form-control {
+  /* Styles here */
+}
+
+.form-control:focus {
+  /* Styles here */
+}
+
+.form-group .control-label {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Listview
+
+   Default Mendix Listview Widget. The list view shows a list of objects arranged vertically. Each object is shown using a template
+========================================================================== */
+.mx-listview {
+  /* Styles here */
+}
+.mx-listview .mx-button.mx-listview-clear-button {
+  /* Styles here */
+}
+.mx-listview > .mx-button {
+  /* Load more button */
+}
+.mx-listview .mx-listview-item {
+  /* Styles here */
+}
+.mx-listview .mx-listview-item:hover {
+  /* Styles here */
+}
+.mx-listview .mx-listview-item.selected {
+  /* Styles here */
+}
+.mx-listview .mx-listview-item.selected:hover {
+  /* Styles here */
+}
+.mx-listview .mx-listview-item:nth-child(2n+1) {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Modals
+
+   Default Mendix Modals. Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults
+========================================================================== */
+.modal-dialog {
+  /* Styles here */
+}
+.modal-dialog .modal-content {
+  /* Styles here */
+}
+.modal-dialog .modal-content .modal-header {
+  /* Styles here */
+}
+.modal-dialog .modal-content .modal-header h4 {
+  /* Styles here */
+}
+.modal-dialog .modal-content .modal-header .close {
+  /* Styles here */
+}
+.modal-dialog .modal-content .modal-body {
+  /* Styles here */
+}
+.modal-dialog .modal-content .modal-footer {
+  /* Styles here */
+}
+
+/* Default Mendix Window Modal */
+/* Default Mendix Login Modal */
+.mx-login {
+  /* Styles here */
+}
+.mx-login .modal-body {
+  /* Styles here */
+}
+.mx-login .modal-content {
+  /* Styles here */
+}
+.mx-login .modal-header,
+.mx-login .modal-footer {
+  /* Styles here */
+}
+.mx-login button {
+  /* Styles here */
+}
+.mx-login h4 {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Bar
+========================================================================== */
+.mx-navbar {
+  /* Styles here */
+}
+.mx-navbar ul.nav {
+  /* Styles here */
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a {
+  color: #FFF;
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a:hover, .mx-navbar ul.nav > li.mx-navbar-item > a:focus, .mx-navbar ul.nav > li.mx-navbar-item > a.active {
+  /* Styles here */
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a.active {
+  /* Styles here */
+}
+.mx-navbar ul.nav > li.mx-navbar-item > a .mx-navbar-submenu:before {
+  /* Dropdown Menu */
+}
+.mx-navbar ul.nav > .mx-navbar-item > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item > a:focus,
+.mx-navbar ul.nav > .mx-navbar-item.active a,
+.mx-navbar ul.nav > .mx-navbar-item.open > a,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:focus {
+  /* When hovering or the dropdown is open */
+}
+.mx-navbar ul.nav > .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem.active a {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Tree
+========================================================================== */
+.mx-navigationtree {
+  /* Styles here */
+}
+.mx-navigationtree .navbar-inner ul {
+  /* Styles here */
+}
+.mx-navigationtree .navbar-inner ul li {
+  /* Styles here */
+}
+.mx-navigationtree .navbar-inner ul li a {
+  padding: 20px;
+  border: 0;
+}
+.mx-navigationtree .navbar-inner ul li a .glyphicon {
+  margin-right: 0.3em;
+}
+.mx-navigationtree .navbar-inner ul li a:hover,
+.mx-navigationtree .navbar-inner ul li a:focus,
+.mx-navigationtree .navbar-inner ul li a.active {
+  /* Styles here */
+}
+.mx-navigationtree .navbar-inner ul li a.active {
+  /* Styles here */
+}
+.mx-navigationtree li.mx-navigationtree-has-items {
+  /* Styles here */
+}
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a {
+  padding: 15px 40px;
+}
+
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Simple Menu Bar
+========================================================================== */
+.mx-menubar {
+  /* Styles here */
+}
+.mx-menubar ul.mx-menubar-list {
+  /* Styles here */
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item {
+  /* Styles here */
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a {
+  /* Styles here */
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item:hover a, .mx-menubar ul.mx-menubar-list li.mx-menubar-item:focus a, .mx-menubar ul.mx-menubar-list li.mx-menubar-item.active a {
+  /* Styles here */
+}
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item.active a {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Navigation List
+
+   Default Mendix Navigation List Widget. A navigation list can be used to attach an action to an entire row. Such a row is called a navigation list item
+========================================================================== */
+.mx-navigationlist {
+  /* Styles here */
+}
+.mx-navigationlist .mx-navigationlist-item {
+  /* Styles here */
+}
+.mx-navigationlist .mx-navigationlist-item:hover {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Tab Container
+
+   Default Mendix Tab Container Widget. Tab containers are used to show information categorized into multiple tab pages. 
+   This can be very useful if the amount of information that has to be displayed is larger than the amount of space on the screen
+========================================================================== */
+.mx-tabcontainer {
+  /* Styles here */
+}
+.mx-tabcontainer .mx-tabcontainer-tabs {
+  /* Styles here */
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  /* Styles here */
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  /* Styles here */
+}
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  /* Styles here */
+}
+.mx-tabcontainer .mx-tabcontainer-content {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Tables
+
+   Default Mendix Table Widget. Tables can be used to lend structure to a page. They contain a number of rows (tr) and columns, the intersection of which is called a cell (td). Each cell can contain widgets
+========================================================================== */
+table.mx-table {
+  /* Styles here */
+}
+table.mx-table > tbody > tr {
+  /* Styles here */
+}
+table.mx-table > tbody > tr > th {
+  /* Styles here */
+}
+table.mx-table > tbody > tr > th > label {
+  /* Styles here */
+}
+table.mx-table > tbody > tr > td {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Templategrid
+
+   Default Mendix Templategrid Widget. The template grid shows a list of objects in a tile view. For example, a template grid can show a list of products. The template grid has a lot in common with the data grid. The main difference is that the objects are shown in templates (a sort of small data view) instead of rows
+========================================================================== */
+.mx-templategrid {
+  /* Styles here */
+}
+.mx-templategrid .mx-templategrid-item {
+  /* Styles here */
+}
+.mx-templategrid .mx-templategrid-item:hover {
+  /* Styles here */
+}
+.mx-templategrid .mx-templategrid-item.selected {
+  /* Styles here */
+}
+.mx-templategrid .mx-templategrid-item.selected:hover {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Typography
+========================================================================== */
+p {
+  /* Styles here */
+}
+
+label {
+  /* Styles here */
+}
+
+.mx-title {
+  /* Styles here */
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Regions
+
+   Used for navigation layouts
+========================================================================== */
+.region-topbar {
+  border-bottom-color: #0595db;
+  min-height: 60px;
+}
+.region-topbar > .mx-layoutcontainer-wrapper .navbar-brand img {
+  height: 26px;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+.region-topbar .toggle-btn {
+  color: #FFF;
+  border-color: #FFF;
+}
+.region-topbar .navbar-right .mx-appswitcher-button-placeholder,
+.region-topbar .navbar-right .mx-profilemenu-button-placeholder {
+  border: 0;
+}
+.region-topbar .navbar-right .mx-profilemenu-button-placeholder iframe {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+/* ==========================================================================
+   Navbar Brand
+
+   Used to style your app brand and logo
+========================================================================== */
+.navbar-brand a {
+  color: #FFF;
+  font-size: 18px;
+}
+
+/* ==========================================================================
+   Layout
+
+   Default Mendix Layout
+========================================================================== */
+.profile-phone,
+.profile-tablet {
+  /* Styles here */
+}
+.profile-phone .mx-layoutcontainer-wrapper,
+.profile-tablet .mx-layoutcontainer-wrapper {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Listview for phone and tablet
+========================================================================== */
+.profile-phone .mx-listview,
+.profile-tablet .mx-listview {
+  /* Styles here */
+}
+.profile-phone .mx-listview .mx-listview-searchbar,
+.profile-tablet .mx-listview .mx-listview-searchbar {
+  /* Styles here */
+}
+.profile-phone .mx-listview .mx-listview-searchbar button,
+.profile-tablet .mx-listview .mx-listview-searchbar button {
+  /* Reset Search Button - default hidden */
+}
+.profile-phone .mx-listview .mx-listview-searchbar .mx-listview-search-input,
+.profile-tablet .mx-listview .mx-listview-searchbar .mx-listview-search-input {
+  /* Search Field */
+}
+.profile-phone .mx-listview .mx-listview-searchbar .mx-listview-search-input input,
+.profile-tablet .mx-listview .mx-listview-searchbar .mx-listview-search-input input {
+  /* Styles here */
+}
+.profile-phone label,
+.profile-tablet label {
+  /* Styles here */
+}
+.profile-phone .mx-listview-loadMore,
+.profile-tablet .mx-listview-loadMore {
+  /* Listview Load More button */
+}
+
+/* ==========================================================================
+   Header
+
+   Default Mendix Header for Mobile 
+========================================================================== */
+body .mx-header {
+  /* Styles here */
+  border: 0;
+}
+body .mx-header .mx-header-center {
+  /* Styles here */
+}
+body .mx-header .mx-header-left {
+  /* Styles here */
+}
+body .mx-header .mx-header-left .mx-link {
+  /* Styles here */
+}
+body .mx-header .mx-header-right {
+  /* Styles here */
+}
+body .mx-header .mx-title {
+  /* Styles here */
+}
+body .mx-header .mx-sidebartoggle {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Tabcontainer
+
+   Default Mendix Tabcontainer for Mobile 
+========================================================================== */
+/* ==========================================================================
+   Special styles for presenting Page Template Dashboard
+========================================================================== */
+.page-dashboard {
+  /* Styles here */
+}
+.page-dashboard .chartjs-node {
+  /* Styles here */
+}
+
+.page-dashboard-default .card {
+  /* Styles here */
+}
+
+.page-dashboard-mytasks .card {
+  /* Styles here */
+}
+
+.page-dashboard-actions {
+  /* Styles here */
+}
+
+.page-dashboard-actions-tasks {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Form
+========================================================================== */
+.page-form {
+  /* Styles here */
+}
+
+.page-form-default {
+  /* Styles here */
+}
+
+.page-form-imagemap {
+  /* Styles here */
+}
+
+.page-form-tabs {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Master Detail
+========================================================================== */
+.page-masterdetail {
+  /* Styles here */
+}
+
+.page-masterdetail-basic {
+  /* Styles here */
+}
+
+.page-masterdetail-big {
+  /* Styles here */
+}
+
+.page-masterdetail-imagemap {
+  /* Styles here */
+}
+
+.page-masterdetail-multilevel {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tabs
+========================================================================== */
+.page-tabs .section.pageheader {
+  border: 0;
+  padding-bottom: 20px;
+}
+.page-tabs .tabsfullwidth {
+  /* Styles here */
+}
+
+.page-tabs-default {
+  /* Styles here */
+}
+
+.page-tabs-fullwidth .pageheader.pageheader-fullwidth {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Website
+========================================================================== */
+.page-website {
+  /* Styles here */
+}
+
+.page-website-actions {
+  /* Styles here */
+}
+
+.page-website-items {
+  /* Styles here */
+}
+
+.page-website-items-detail {
+  /* Styles here */
+}
+
+.page-website-presentation {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Wizard
+========================================================================== */
+.page-wizard {
+  /* Styles here */
+}
+
+.page-wizard-default {
+  /* Styles here */
+}
+
+.page-wizard-titlecentered {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone
+========================================================================== */
+.phone-page-dashboard {
+  /* Styles here */
+}
+
+.phone-page-dashboard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Form
+========================================================================== */
+.phone-page-form {
+  /* Styles here */
+}
+
+.phone-page-form-default {
+  /* Styles here */
+}
+
+.phone-page-form-edit {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Listview
+========================================================================== */
+.phone-page-listview {
+  /* Styles here */
+}
+
+.phone-page-listview-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Phone Wizard
+========================================================================== */
+.phone-page-wizard {
+  /* Styles here */
+}
+
+.phone-page-wizard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Dashboard
+========================================================================== */
+.tablet-page-dashboard {
+  /* Styles here */
+}
+
+.tablet-page-dashboard-default {
+  /* Styles here */
+}
+
+.tablet-page-dashboard-big {
+  /* Styles here */
+}
+
+.tablet-page-dashboard-mytasks {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Form
+========================================================================== */
+.tablet-page-form {
+  /* Styles here */
+}
+
+.tablet-page-form-default {
+  /* Styles here */
+}
+
+.tablet-page-form-edit {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Master Detail
+========================================================================== */
+.tablet-page-masterdetail {
+  /* Styles here */
+}
+
+.tablet-page-masterdetail-default {
+  /* Styles here */
+}
+
+.tablet-page-masterdetail-leftright {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Special styles for presenting Page Template Tablet Wizard
+========================================================================== */
+.tablet-page-wizard {
+  /* Styles here */
+}
+
+.tablet-page-wizard-default {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Card
+========================================================================== */
+.card {
+  /* Styles here */
+}
+
+.card-header-action {
+  /* Title + button + border below title and button */
+}
+.card-header-action .card-title {
+  /* Styles here */
+}
+.card-header-action .btn {
+  /* Styles here */
+}
+
+.card-details {
+  /* Styles here */
+}
+
+.card-title {
+  /* Styles here */
+}
+
+.card-subtitle {
+  /* Styles here */
+}
+
+.card-annotation {
+  /* Styles here */
+}
+
+.card-icon {
+  /* Styles here */
+}
+.card-icon .glyphicon {
+  /* Styles here */
+}
+
+.card-image {
+  /* Styles here */
+}
+
+.card-link {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Dashboard Card
+========================================================================== */
+.dashboardcard {
+  /* Styles here */
+}
+
+.dashboardcard-title {
+  /* Styles here */
+}
+
+.dashboardcard-subtitle {
+  /* Styles here */
+}
+
+.dashboardcard-link {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Dashboard Stats
+
+   Used in dashboard
+========================================================================== */
+.dashboardstat {
+  /* Styles here */
+}
+.dashboardstat .dashboardstat-left,
+.dashboardstat .dashboardstat-right {
+  /* Styles here */
+}
+
+.dashboardstat-icon {
+  /* Styles here */
+}
+
+.dashboardstat-title {
+  /* Styles here */
+}
+
+.dashboardstat-number {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Form
+
+   To extend the default form
+========================================================================== */
+.form {
+  /* Styles here */
+}
+
+.control-label {
+  /* Styles here */
+}
+
+.form-footer {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Form Block
+
+   Used in default forms
+========================================================================== */
+.formblock {
+  /* Styles here */
+}
+
+.formblock-header {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Page Header
+========================================================================== */
+.pageheader {
+  /* Styles here */
+}
+
+.pageheader.section {
+  /* Styles here */
+}
+
+.pageheader-title {
+  /* Styles here */
+}
+
+.pageheader-subtitle {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Section Header
+========================================================================== */
+.sectionheader {
+  /* Styles here */
+}
+
+.sectionheader-title {
+  /* Styles here */
+}
+
+.sectionheader-subtitle {
+  /* Styles here */
+}
+
+.sectionheader-avatar {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Profile Card
+========================================================================== */
+.profilecard {
+  /* Styles here */
+}
+.profilecard .profilecard-contentwrapper {
+  /* Styles here */
+}
+.profilecard .profilecard-imgwrapper {
+  /* Styles here */
+}
+.profilecard .profilecard-actionwrapper {
+  /* Styles here */
+}
+.profilecard .profilecard-contentwrapper,
+.profilecard .profilecard-imgwrapper,
+.profilecard .profilecard-actionwrapper {
+  /* Styles here */
+}
+
+.profilecard-btn {
+  /* Styles here */
+}
+
+.profilecard-img {
+  /* Styles here */
+}
+
+.profilecard-title {
+  /* Styles here */
+}
+
+.profilecard-subtitle {
+  /* Styles here */
+}
+
+.pageheader .profilecard {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Profile Header
+========================================================================== */
+.profileheader {
+  /* Styles here */
+}
+.profileheader .profileheader-content {
+  /* Styles here */
+}
+.profileheader .profileheader-image {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Products
+
+   Used in Website page templates
+========================================================================== */
+.product-header {
+  /* Styles here */
+}
+
+.product-content {
+  /* Styles here */
+}
+
+.product-title {
+  /* Styles here */
+}
+
+.product-subtitle {
+  /* Styles here */
+}
+
+.product-btn {
+  /* Styles here */
+}
+
+.section {
+  /* Styles here */
+}
+
+.profile-phone .section {
+  /* Styles here */
+}
+
+.profile-tablet .section {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Sidebar Header
+========================================================================== */
+.sidebarheader {
+  /* Styles here */
+}
+
+.sidebarheader-content {
+  /* Styles here */
+}
+
+.sidebarheader-img {
+  /* Styles here */
+}
+
+.sidebarheader-title {
+  /* Styles here */
+}
+
+.sidebarheader-subtitle {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Tabs full width
+========================================================================== */
+.tabsfullwidth {
+  /* Styles here */
+}
+.tabsfullwidth > .mx-tabcontainer-tabs {
+  /* Styles here */
+}
+.tabsfullwidth > .mx-tabcontainer-content {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Wizard
+
+   Styling for Wizard (Steps/Numbers)
+========================================================================== */
+.wizard {
+  /* Wizard line between steps */
+}
+.wizard:before {
+  /* Styles here */
+}
+
+.wizard-step {
+  /* Styles here */
+}
+
+.wizard-step-number {
+  /* Styles here */
+}
+
+.wizard-step-number-active {
+  /* Styles here */
+}
+
+.wizard-step-number-visited {
+  /* Styles here */
+}
+
+.wizard-step-title {
+  /* Styles here */
+}
+
+/* Phone Specific Styling */
+.profile-phone .wizard:before {
+  /* Styles here */
+}
+.profile-phone .wizard .wizard-step-number {
+  /* Styles here */
+}
+
+/* ==========================================================================
+   Templategrid Profile Card
+
+   Profile card styled for templategrid
+========================================================================== */
+.templategrid-profilecard {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-contentwrapper {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-imgwrapper {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-contentwrapper,
+.templategrid-profilecard .templategrid-profilecard-imgwrapper {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-btn {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-img {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-title {
+  /* Styles here */
+}
+.templategrid-profilecard .templategrid-profilecard-subtitle {
+  /* Styles here */
+}

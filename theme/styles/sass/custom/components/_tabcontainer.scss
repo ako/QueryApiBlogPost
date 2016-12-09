@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Tab Container
+
+   Default Mendix Tab Container Widget. Tab containers are used to show information categorized into multiple tab pages. 
+   This can be very useful if the amount of information that has to be displayed is larger than the amount of space on the screen
+========================================================================== */
+.mx-tabcontainer {
+	/* Styles here */
+	.mx-tabcontainer-tabs {
+		/* Styles here */
+		> li > a {
+			/* Styles here */
+			&:hover,
+			&:focus {
+				/* Styles here */
+			}
+		}
+
+		> li.active > a,
+		> li.active > a:hover,
+		> li.active > a:focus {
+			/* Styles here */
+		}
+	}
+	.mx-tabcontainer-content {
+		/* Styles here */
+	}
+}
+
+
+// ==========================================================================
+// Tab Container Pills
+//
+// Default Mendix Tab Container Widget rendered as Pills
+//==========================================================================
+.tab-pills.mx-tabcontainer {
+	.mx-tabcontainer-tabs {
+
+		> li > a {
+
+			&:hover,
+			&:focus {
+				
+			}
+		}
+
+		> li.active > a,
+		> li.active > a:hover,
+		> li.active > a:focus  {
+
+		}
+	}
+}
+
+
+//==========================================================================
+// Tab Container Lined
+//
+// Default Mendix Tab Container Widget rendered with tabs rendered without background
+//==========================================================================
+.tab-lined.mx-tabcontainer {
+	.mx-tabcontainer-tabs {
+
+        li {
+
+            > a {
+
+                &:hover, 
+                &:focus {
+
+                }
+
+            }
+
+            &.active > a,
+            &.active > a:hover, 
+            &.active > a:focus  {
+
+            }
+        }
+    }
+}
+
+
+//==========================================================================
+// Tab Container Justified
+//
+// Default Mendix Tab Container Widget rendered as justified
+//==========================================================================
+.tab-justified.mx-tabcontainer {
+	.mx-tabcontainer-tabs {
+
+		> li {
+
+			@media (max-width: 768px) {
+
+			}	
+			> a {
+
+			}
+		
+		}
+		> li.active > a {
+
+			@media (max-width: 768px) {
+				
+			}
+		}
+	}
+	&.tab-pills .mx-tabcontainer-tabs > li > a { 
+
+	}
+}
+
+
+//==========================================================================
+// Tab Container Bordered
+//
+// Default Mendix Tab Container Widget rendered with borders
+//==========================================================================
+.tab-bordered.mx-tabcontainer {
+	.mx-tabcontainer-tabs {
+
+	}
+
+	.mx-tabcontainer-content {
+
+	}
+}

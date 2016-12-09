@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Tabs full width
+========================================================================== */
+.tabsfullwidth {
+	/* Styles here */
+	> .mx-tabcontainer-tabs {
+		/* Styles here */
+		@media (min-width: $screen-sm) {
+			
+		}
+	}
+	> .mx-tabcontainer-content {
+		/* Styles here */
+	}
+}
