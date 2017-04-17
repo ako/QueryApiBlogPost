@@ -1,0 +1,16 @@
+<ivy-module version="2.0">
+    <info organisation="com.mendix" module="mxawsconnectors"/>
+    <configurations defaultconfmapping="default">
+        <conf name="default" description="run in modeler" extends="export"/>
+        <conf name="export" description="connector export dependencies only"/>
+    </configurations>
+    <dependencies>
+        <!-- for appcloudservices -->
+<!--
+        <dependency org="com.google.guava" name="guava" rev="19.0"/>
+-->
+        <dependency org="commons-lang" name="commons-lang" rev="2.5"/>
+        <dependency org="org.openid4java" name="openid4java" rev="0.9.8"/>
+        <dependency org="org.apache.ws.commons.axiom" name="axiom-api" rev="1.2.19"/>
+    </dependencies>
+</ivy-module>
