@@ -14,4 +14,4 @@ releases
 deployment
 *~
 scripts/env-ako.cmd
-
+.gradle

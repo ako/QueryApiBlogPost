@@ -1,0 +1,66 @@
+
+/* use:
+ * Download all dependencies - \programs\gradle-3.5\bin\gradle getTestRuntimeLibs
+ * Download just the export dependencies -  \programs\gradle-3.5\bin\gradle getExportLibs
+ */
+
+apply plugin: 'java'
+
+configurations {
+    export {}
+    compile { extendsFrom export
+    }
+}
+compileJava.destinationDir = file("$rootDir/deployment/run/bin")
+
+dependencies {
+    // public mendix runtime jars
+    compile name: 'com.mendix.public-api'
+    compile name: 'com.mendix.json'
+    compile name: 'com.mendix.logging-api'
+    compile name: 'com.mendix.m2ee-api'
+    compile name: 'javax.servlet'
+    compile name: 'biz.aQute.bnd.bndlib'
+    // for appcloudservices
+    testRuntime 'org.openid4java:openid4java:1.0.0'
+    testRuntime 'commons-lang:commons-lang:2.5'
+    testRuntime 'org.apache.ws.commons.axiom:axiom-api:1.2.19'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs '/c://Program Files/Mendix/7.6.0/runtime/bundles'
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['javasource']
+        }
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+}
+
+task getExportlibs(type: Copy) {
+    doFirst {
+        delete fileTree(dir: "userlib")
+    }
+    from configurations.export
+    into 'userlib/'
+    doLast {
+        files { file('userlib').listFiles() }.each { File file ->
+            println "file found: $file.name"
+            def keepFilename = 'userlib/' + file.name + '.QueryApiBlogPost.RequiredLib'
+            ant.touch(file: keepFilename)
+        }
+    }
+}
+
+task getTestRuntimelibs(type: Copy) {
+    from configurations.testRuntime
+    into 'userlib/'
+}

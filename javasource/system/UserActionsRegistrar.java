@@ -21,6 +21,7 @@ public class UserActionsRegistrar
     registrator.registerUserAction(hr.actions.RetrieveAdvancedOql.class);
     registrator.registerUserAction(hr.actions.RetrieveAdvancedSql.class);
     registrator.registerUserAction(hr.actions.RetrieveAdvancedXpath.class);
+    registrator.registerUserAction(hr.actions.RetrieveDatasetOql.class);
     registrator.registerUserAction(system.actions.VerifyPassword.class);
   }
 }
