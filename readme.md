@@ -8,7 +8,8 @@ You can use these query languages in the Mendix Modeler, but both languages are 
 
 In this blogpost I’ll show you have you can build the following Microflow actions:
 * Retrieve advanced Xpath – returns a list of entities as specified by the Xpath expression,
-* Retrieve advanced OQL – returns a list of entities as specified by and OQL query,
+* Retrieve advanced OQL – returns a list of entities as specified by a OQL query,
+* Retrieve Dataset OQL - returns a list of entities as specified by a Dataset OQL query
 * Retrieve advanced SQL – returns a list of entities as specified by a SQL query,
 * Create first Monday of month list – returns a list of dates of the first Monday of every month in a specified range.
 
@@ -97,6 +98,25 @@ Note in the domain model screenshot and the OQL screenshot above, the names of t
 The result is a generic OQL action that you can use in your microflows as follows:
 
  ![][23]
+
+## Retrieve objects using OQL specified in a Dataset
+
+Instead of coding the OQL statement in a string parameter, you can also use a Dataset. This has the benefit that Mendix modeler will validate your OQL query.
+
+ ![][40]
+ 
+Now we need to define a java action that will take the name of the dataset. This action will get the OQL of the DataSet, execute it, and return a list of mendix objects. 
+
+ ![][41]
+
+Microflow to execute the Java action is similar to the previous example, but instead of an OQL query, you specify the name of the Dataset.
+
+ ![][42]
+
+The java code to get the Dataset OQL, execute the OQL, and retrieve the Objects.
+
+ ![][43]
+
  
 ## Retrieving objects using SQL
 
@@ -215,3 +235,8 @@ You will see the list of dates in the console.
  [38]: docs/images/image038.jpg
  [39]: docs/images/image039.png
  [40]: docs/images/image040.jpg
+ [41]: docs/images/image041.png
+ [42]: docs/images/image042.png
+ [43]: docs/images/image043.png
+ [44]: docs/images/image044.png
+ 
