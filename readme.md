@@ -234,9 +234,8 @@ You will see the list of dates in the console.
  [37]: docs/images/image037.png
  [38]: docs/images/image038.jpg
  [39]: docs/images/image039.png
- [40]: docs/images/image040.jpg
- [41]: docs/images/image041.png
- [42]: docs/images/image042.png
- [43]: docs/images/image043.png
- [44]: docs/images/image044.png
+ [40]: docs/images/image040.PNG
+ [41]: docs/images/image041.PNG
+ [42]: docs/images/image042.PNG
+ [43]: docs/images/image043.PNG
  
