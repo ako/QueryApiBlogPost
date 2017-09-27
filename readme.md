@@ -113,7 +113,7 @@ Microflow to execute the Java action is similar to the previous example, but ins
 
  ![][42]
 
-The java code to get the Dataset OQL, execute the OQL, and retrieve the Objects.
+The java code to get the Dataset OQL, execute the OQL, and retrieve the Objects. You can use the *Core.createOQLTextGetRequestFromDataSet()* method to get te OQL query or the Dataset specified.
 
  ![][43]
 
@@ -127,7 +127,7 @@ The definition of the Java action resembles the OQL action, but instead of a OQL
  ![][25]
 
 The java implementation below uses the following steps:
-*	Use the new Core.dataStorage().executeWithConnection to execute some java statements that receive a jdbc connection from the internal connection pool. The way this API is constructed enables the Mendix platform to guarantee that connections are returned to the pool after usage.
+*	Use the new *Core.dataStorage().executeWithConnection()* to execute some java statements that receive a jdbc connection from the internal connection pool. The way this API is constructed enables the Mendix platform to guarantee that connections are returned to the pool after usage.
 
  ![][26]
  
