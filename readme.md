@@ -260,29 +260,31 @@ action to register any desired event handler, most likely in the *After App Star
 Example code to illustrate how to register the event listener. This code will log old and new attribute value for
 all changes attributes before making changes in the database:
 
-    public java.lang.Boolean executeAction() throws Exception {
-        // BEGIN USER CODE
-        Core.getListenersRegistry().registerBeforeCommitListener(objects -> {
-            ILogNode logger = Core.getLogger("BeforeCommitListener");
-            for (IMendixObject obj : objects) {
-                logger.info("ObjectType: " + obj.getType());
+```java
+public java.lang.Boolean executeAction() throws Exception {
+    // BEGIN USER CODE
+    Core.getListenersRegistry().registerBeforeCommitListener(objects -> {
+        ILogNode logger = Core.getLogger("BeforeCommitListener");
+        for (IMendixObject obj : objects) {
+            logger.info("ObjectType: " + obj.getType());
 
-                List<? extends IMendixObjectMember<?>> changedMembers = obj.getChangedMembers(getContext());
+            List<? extends IMendixObjectMember<?>> changedMembers = obj.getChangedMembers(getContext());
 
-                logger.info(String.format("Has changed members: %b? Number of changed members: %d", obj.isChanged(), changedMembers.size()));
-                for (IMendixObjectMember member : changedMembers) {
-                    logger.info(
-                            String.format("Changed member %s : %s -> %s", member.getName(),
-                                    member.getOriginalValue(getContext()) != null ? member.getOriginalValue(getContext()).toString() : "",
-                                    member.getValue(getContext()) != null ? member.getValue(getContext()).toString() : ""
-                            )
-                    );
-                }
+            logger.info(String.format("Has changed members: %b? Number of changed members: %d", obj.isChanged(), changedMembers.size()));
+            for (IMendixObjectMember member : changedMembers) {
+                logger.info(
+                        String.format("Changed member %s : %s -> %s", member.getName(),
+                                member.getOriginalValue(getContext()) != null ? member.getOriginalValue(getContext()).toString() : "",
+                                member.getValue(getContext()) != null ? member.getValue(getContext()).toString() : ""
+                        )
+                );
             }
-        });
-        return true;
-        // END USER CODE
-    }
+        }
+    });
+    return true;
+    // END USER CODE
+}
+```
 
 This example will trigger a listener for every object change before writing the changes to the database. To find out
 what attributes have been changed, you
