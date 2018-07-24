@@ -30,7 +30,7 @@ dependencies {
 repositories {
     mavenCentral()
     flatDir {
-        dirs '/c://Program Files/Mendix/7.6.0/runtime/bundles'
+        dirs '/c://Program Files/Mendix/7.17.0-rc5/runtime/bundles'
     }
 }
 

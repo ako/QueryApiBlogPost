@@ -9,10 +9,10 @@
 <mapAttribute key="org.eclipse.debug.core.environmentVariables">
 <mapEntry key="M2EE_ADMIN_PASS" value="1"/>
 <mapEntry key="M2EE_ADMIN_PORT" value="8090"/>
-<mapEntry key="M2EE_CONSOLE_PATH" value="C:/Program Files/Mendix/7.6.0/modeler/MendixConsoleLog.exe"/>
-<mapEntry key="MX_INSTALL_PATH" value="C:/Program Files/Mendix/7.6.0"/>
+<mapEntry key="M2EE_CONSOLE_PATH" value="C:/Program Files/Mendix/7.17.0-rc5/modeler/MendixConsoleLog.exe"/>
+<mapEntry key="MX_INSTALL_PATH" value="C:/Program Files/Mendix/7.17.0-rc5"/>
 <mapEntry key="MXCONSOLE_BASE_PATH" value="C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment"/>
-<mapEntry key="MXCONSOLE_RUNTIME_PATH" value="C:/Program Files/Mendix/7.6.0/runtime"/>
+<mapEntry key="MXCONSOLE_RUNTIME_PATH" value="C:/Program Files/Mendix/7.17.0-rc5/runtime"/>
 <mapEntry key="MXCONSOLE_RUNTIME_PORT" value="8080"/>
 <mapEntry key="MXCONSOLE_RUNTIME_LISTEN_ADDRESSES" value="*"/>
 <mapEntry key="MXCONSOLE_SERVER_URL" value="http://127.0.0.1:8090/"/>
@@ -21,13 +21,13 @@
 <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;sourceLookupDirector&gt;&#13;&#10;&lt;sourceContainers duplicates=&quot;false&quot;&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;javaProject name=&amp;quot;QueryApiBlogPost&amp;quot;/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.jdt.launching.sourceContainer.javaProject&quot;/&gt;&#13;&#10;&lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#13;&amp;#10;&amp;lt;default/&amp;gt;&amp;#13;&amp;#10;&quot; typeId=&quot;org.eclipse.debug.core.containerType.default&quot;/&gt;&#13;&#10;&lt;/sourceContainers&gt;&#13;&#10;&lt;/sourceLookupDirector&gt;&#13;&#10;"/>
 <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
 <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER&quot; javaProject=&quot;QueryApiBlogPost&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#13;&#10;"/>
-<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:/Program Files/Mendix/7.6.0/runtime/launcher/runtimelauncher.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
-<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:/Program Files/Mendix/7.6.0/runtime/lib/com.mendix.xml-apis-1.4.1.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:/Program Files/Mendix/7.17.0-rc5/runtime/launcher/runtimelauncher.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:/Program Files/Mendix/7.17.0-rc5/runtime/lib/com.mendix.xml-apis-1.4.1.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.mendix.container.boot.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QueryApiBlogPost"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -DMX_LOG_LEVEL=INFO -Djava.library.path=&quot;C:/Program Files/Mendix/7.6.0/runtime/lib/x64;C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment/model/lib/userlib&quot; -Dfile.encoding=UTF-8 -Djava.io.tmpdir=&quot;C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment/data/tmp&quot; -Djava.security.manager -Djava.security.policy==&quot;C:\Users\ako\Documents\GitHub\QueryApiBlogPost\deployment\data\.policy&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv4Stack=true -DMX_LOG_LEVEL=INFO -Djava.library.path=&quot;C:/Program Files/Mendix/7.17.0-rc5/runtime/lib/x64;C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment/model/lib/userlib&quot; -Dfile.encoding=UTF-8 -Djava.io.tmpdir=&quot;C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment/data/tmp&quot; -Djava.security.manager -Djava.security.policy==&quot;C:\Users\ako\Documents\GitHub\QueryApiBlogPost\deployment\data\.policy&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:/Users/ako/Documents/GitHub/QueryApiBlogPost/deployment"/>
 </launchConfiguration>

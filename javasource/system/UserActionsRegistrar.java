@@ -17,6 +17,7 @@ public class UserActionsRegistrar
     registrator.registerUserAction(appcloudservices.actions.StartSignOnServlet.class);
     registrator.registerUserAction(csvservices.actions.CsvExportInitializeAction.class);
     registrator.registerUserAction(csvservices.actions.ImportCsvData.class);
+    registrator.registerUserAction(hr.actions.AddGlobalEntityListeners.class);
     registrator.registerUserAction(hr.actions.CreateDateRangeList.class);
     registrator.registerUserAction(hr.actions.RetrieveAdvancedOql.class);
     registrator.registerUserAction(hr.actions.RetrieveAdvancedSql.class);

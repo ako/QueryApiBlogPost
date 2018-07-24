@@ -6,8 +6,8 @@ package system.proxies;
 
 public enum UserType
 {
-	Internal(new java.lang.String[][] { new java.lang.String[] { "en_US", "Internal" } }),
-	External(new java.lang.String[][] { new java.lang.String[] { "en_US", "External" } });
+	Internal(new java.lang.String[][] { new java.lang.String[] { "en_US", "Internal" }, new java.lang.String[] { "nl_NL", "Intern" } }),
+	External(new java.lang.String[][] { new java.lang.String[] { "en_US", "External" }, new java.lang.String[] { "nl_NL", "Extern" } });
 
 	private java.util.Map<java.lang.String, java.lang.String> captions;
 

@@ -4,12 +4,8 @@
 
 package system.proxies;
 
-public class HttpResponse
+public class HttpResponse extends system.proxies.HttpMessage
 {
-	private final com.mendix.systemwideinterfaces.core.IMendixObject httpResponseMendixObject;
-
-	private final com.mendix.systemwideinterfaces.core.IContext context;
-
 	/**
 	 * Internal name of this entity
 	 */
@@ -20,9 +16,9 @@ public class HttpResponse
 	 */
 	public enum MemberNames
 	{
-		HttpVersion("HttpVersion"),
 		StatusCode("StatusCode"),
 		ReasonPhrase("ReasonPhrase"),
+		HttpVersion("HttpVersion"),
 		Content("Content");
 
 		private java.lang.String metaName;
@@ -46,13 +42,9 @@ public class HttpResponse
 
 	protected HttpResponse(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject httpResponseMendixObject)
 	{
-		if (httpResponseMendixObject == null)
-			throw new java.lang.IllegalArgumentException("The given object cannot be null.");
+		super(context, httpResponseMendixObject);
 		if (!com.mendix.core.Core.isSubClassOf("System.HttpResponse", httpResponseMendixObject.getType()))
 			throw new java.lang.IllegalArgumentException("The given object is not a System.HttpResponse");
-
-		this.httpResponseMendixObject = httpResponseMendixObject;
-		this.context = context;
 	}
 
 	/**
@@ -77,73 +69,6 @@ public class HttpResponse
 	{
 		com.mendix.systemwideinterfaces.core.IMendixObject mendixObject = com.mendix.core.Core.retrieveId(context, mendixIdentifier);
 		return system.proxies.HttpResponse.initialize(context, mendixObject);
-	}
-
-	/**
-	 * Commit the changes made on this proxy object.
-	 */
-	public final void commit() throws com.mendix.core.CoreException
-	{
-		com.mendix.core.Core.commit(context, getMendixObject());
-	}
-
-	/**
-	 * Commit the changes made on this proxy object using the specified context.
-	 */
-	public final void commit(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		com.mendix.core.Core.commit(context, getMendixObject());
-	}
-
-	/**
-	 * Delete the object.
-	 */
-	public final void delete()
-	{
-		com.mendix.core.Core.delete(context, getMendixObject());
-	}
-
-	/**
-	 * Delete the object using the specified context.
-	 */
-	public final void delete(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		com.mendix.core.Core.delete(context, getMendixObject());
-	}
-	/**
-	 * @return value of HttpVersion
-	 */
-	public final java.lang.String getHttpVersion()
-	{
-		return getHttpVersion(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of HttpVersion
-	 */
-	public final java.lang.String getHttpVersion(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.HttpVersion.toString());
-	}
-
-	/**
-	 * Set value of HttpVersion
-	 * @param httpversion
-	 */
-	public final void setHttpVersion(java.lang.String httpversion)
-	{
-		setHttpVersion(getContext(), httpversion);
-	}
-
-	/**
-	 * Set value of HttpVersion
-	 * @param context
-	 * @param httpversion
-	 */
-	public final void setHttpVersion(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String httpversion)
-	{
-		getMendixObject().setValue(context, MemberNames.HttpVersion.toString(), httpversion);
 	}
 
 	/**
@@ -218,58 +143,6 @@ public class HttpResponse
 		getMendixObject().setValue(context, MemberNames.ReasonPhrase.toString(), reasonphrase);
 	}
 
-	/**
-	 * @return value of Content
-	 */
-	public final java.lang.String getContent()
-	{
-		return getContent(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Content
-	 */
-	public final java.lang.String getContent(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Content.toString());
-	}
-
-	/**
-	 * Set value of Content
-	 * @param content
-	 */
-	public final void setContent(java.lang.String content)
-	{
-		setContent(getContext(), content);
-	}
-
-	/**
-	 * Set value of Content
-	 * @param context
-	 * @param content
-	 */
-	public final void setContent(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String content)
-	{
-		getMendixObject().setValue(context, MemberNames.Content.toString(), content);
-	}
-
-	/**
-	 * @return the IMendixObject instance of this proxy for use in the Core interface.
-	 */
-	public final com.mendix.systemwideinterfaces.core.IMendixObject getMendixObject()
-	{
-		return httpResponseMendixObject;
-	}
-
-	/**
-	 * @return the IContext instance of this proxy, or null if no IContext instance was specified at initialization.
-	 */
-	public final com.mendix.systemwideinterfaces.core.IContext getContext()
-	{
-		return context;
-	}
-
 	@Override
 	public boolean equals(Object obj)
 	{
@@ -302,6 +175,7 @@ public class HttpResponse
 	 * @return String GUID from this object, format: ID_0000000000
 	 * @deprecated Use getMendixObject().getId().toLong() to get a unique identifier for this object.
 	 */
+	@Override
 	@Deprecated
 	public java.lang.String getGUID()
 	{
